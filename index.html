@@ -1,0 +1,1193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>From Messy to Massey | Drummond Carpenter</title>
+<meta name="description" content="Drummond Carpenter's answer to the Massey Services challenge at Enterprise Reverse Pitch: weekly exports in, a mail-ready list out, with the reason behind every name removed.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="From messy data to Massey data">
+<meta property="og:description" content="Drummond Carpenter's working answer to the Massey Services challenge at Enterprise Reverse Pitch.">
+<meta name="theme-color" content="#061a2b">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#061a2b;--navy2:#0a2740;--navy3:#103554;
+  --ink:#0f2433;--muted:#566b75;--paper:#f3f5f0;--line:#dbe3dd;
+  --teal:#12a198;--teal-d:#0a7f7b;--mint:#bdedd6;--lime:#d7f775;--red:#ff5a4c;--red-d:#c9362b;--amber:#ffb84d;--sky:#8cc4ff;
+  --display:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,Consolas,monospace;
+  --gut:clamp(16px,4.5vw,64px);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--navy);color:#e6efec;font-family:var(--display);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit}
+img{max-width:100%}
+section{scroll-margin-top:64px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 var(--gut)}
+.kicker{font:600 12px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--mint);display:flex;gap:12px;align-items:center;margin:0}
+.kicker:before{content:'';width:28px;height:2px;background:var(--lime);flex:none}
+.light .kicker{color:var(--teal-d)}.light .kicker:before{background:var(--teal-d)}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:13px 20px;border-radius:999px;font:700 14px var(--display);text-decoration:none;border:0;cursor:pointer;transition:transform .2s,background .2s,color .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-lime{background:var(--lime);color:var(--navy)}
+.btn-ghost{background:transparent;color:#fff;box-shadow:inset 0 0 0 1px rgba(255,255,255,.28)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1px var(--lime);color:var(--lime)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-line{background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)}
+:focus-visible{outline:3px solid var(--lime);outline-offset:3px}
+.light :focus-visible{outline-color:var(--teal-d)}
+.sec{padding:clamp(80px,10vw,140px) 0}
+.light{background:var(--paper);color:var(--ink)}
+.dark{background:var(--navy);color:#e6efec}
+.sec-h h2{font-size:clamp(34px,4.4vw,62px);line-height:1.02;letter-spacing:-.035em;font-weight:900;margin:16px 0 18px}
+.dark .sec-h h2{color:#fff}
+.lede{font-size:clamp(17px,1.3vw,19.5px);max-width:700px;margin:0}
+.light .lede{color:var(--muted)}
+.dark .lede{color:#bdd0cd}
+
+/* nav */
+#bar{position:fixed;top:0;left:0;right:0;height:3px;background:var(--lime);transform-origin:0 50%;transform:scaleX(0);z-index:70}
+.nav{position:fixed;inset:0 0 auto;z-index:60;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px var(--gut);transition:background .3s,box-shadow .3s}
+.nav.solid{background:rgba(6,26,43,.9);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 1px 0 rgba(255,255,255,.07)}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff;min-width:0}
+.brand img{height:30px;width:auto;filter:brightness(0) invert(1)}
+.brand .x{opacity:.45;font-size:18px}
+.brand .ms{font-weight:900;font-style:italic;letter-spacing:.02em;font-size:18px;white-space:nowrap}
+.navlinks{display:flex;gap:22px;font-size:14px;font-weight:500}
+.navlinks a{color:#b8ccc8;text-decoration:none;transition:color .2s}
+.navlinks a:hover{color:#fff}
+.navr{display:flex;gap:10px;align-items:center}
+.motion{background:transparent;border:0;color:#9fb6b3;font:500 12px var(--mono);cursor:pointer;padding:8px;letter-spacing:.04em}
+.motion:hover{color:#fff}
+
+/* hero */
+.pin{position:relative}
+.sticky{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+#hero{height:240vh;background:radial-gradient(1100px 700px at 72% 45%,#0f3452 0%,var(--navy) 62%)}
+.still #hero{height:100vh;height:100svh}
+#swarm{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero-shade{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,rgba(6,26,43,.92) 0%,rgba(6,26,43,.7) 34%,rgba(6,26,43,0) 60%)}
+.hero-copy{position:relative;z-index:2;height:100%;max-width:1400px;margin:0 auto;padding:92px var(--gut) 70px;display:flex;flex-direction:column;justify-content:center;pointer-events:none}
+.hero-copy>*{max-width:600px}
+.hero-copy>.hero-h{max-width:none}
+.hero-h{font-size:clamp(46px,6.2vw,104px);line-height:.94;letter-spacing:-.04em;font-weight:900;margin:22px 0 24px;color:#fff}
+.hero-h .messy{display:block}
+.hero-h .messy .w{display:inline-block;white-space:nowrap}
+.hero-h .messy .w span{display:inline-block;will-change:transform}
+.hero-h .messy .sp{display:inline-block;width:.26em}
+.hero-h .clean{display:block;color:var(--lime);padding-bottom:.08em}
+.hero-sub{font-size:clamp(17px,1.35vw,20px);color:#c3d4d1;margin:0}
+.hero-meter{margin-top:26px;display:flex;align-items:center;gap:16px}
+.hero-meter b{font:600 clamp(32px,3.2vw,48px)/1 var(--mono);color:#fff;letter-spacing:-.03em;font-variant-numeric:tabular-nums;min-width:4.4ch}
+.hero-meter span{font:500 13px/1.45 var(--mono);color:var(--mint);max-width:260px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px;pointer-events:auto}
+.cue{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;font:500 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:#a9c0bd;pointer-events:none}
+.cue i{width:1px;height:34px;background:linear-gradient(var(--lime),transparent);animation:cue 1.8s ease-in-out infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+
+/* glance band */
+.glance{background:#040f1a;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06)}
+.glance .wrap{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0}
+.gl{padding:20px 16px;border-left:1px solid rgba(255,255,255,.08)}
+.gl:first-child{border-left:0;padding-left:0}
+.gl b{display:block;font:600 10.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mint);margin-bottom:6px}
+.gl span{font-size:14.5px;color:#e6efec;line-height:1.4;display:block}
+
+/* watch it clean */
+#clean{height:640vh;background:linear-gradient(180deg,var(--navy),#071f36 50%,var(--navy))}
+.cl{position:relative;height:100%;max-width:1440px;margin:0 auto;padding:76px var(--gut) 18px;display:grid;grid-template-rows:auto minmax(0,1fr);gap:14px}
+#cl-fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:9}
+.cl-prog{list-style:none;margin:0 0 12px;padding:0;display:grid;grid-template-columns:repeat(7,1fr);gap:6px;font:500 11px var(--mono);color:#62818a}
+.cl-prog li{padding-top:8px;border-top:3px solid rgba(255,255,255,.12);transition:color .3s,border-color .3s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cl-prog li.done{border-color:var(--teal);color:#9fc9c2}
+.cl-prog li.on{border-color:var(--lime);color:var(--lime)}
+.cl-cap{display:grid;grid-template-columns:minmax(0,1fr);min-height:92px}
+.cl-cap>div{grid-area:1/1;opacity:0;transform:translateY(10px);transition:opacity .4s,transform .4s;pointer-events:none}
+.cl-cap>div.on{opacity:1;transform:none}
+.cl-cap h2{font-size:clamp(24px,2.5vw,36px);line-height:1.08;letter-spacing:-.025em;margin:0 0 6px;color:#fff;font-weight:800}
+.cl-cap p{margin:0;color:#bdd0cd;font-size:16px;max-width:860px}
+.cl-body{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:18px;min-height:0}
+.sheet{position:relative;background:#f7f9f5;color:var(--ink);border-radius:16px;overflow:hidden;box-shadow:0 40px 90px rgba(0,0,0,.4);display:flex;flex-direction:column;min-height:0}
+.sh-bar{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 14px;background:#e3eae4;font:600 11.5px var(--mono);color:#4d6671;transition:background .4s,color .4s}
+.sheet.done .sh-bar{background:var(--lime);color:var(--navy)}
+.sh-bar .mcount{display:none;background:var(--navy);color:#fff;border-radius:999px;padding:2px 9px;font-size:10.5px}
+.sh-cols,.row{display:grid;grid-template-columns:74px minmax(0,1.2fr) minmax(0,.8fr) minmax(0,1.55fr) minmax(0,.95fr) minmax(0,1.6fr);gap:8px;align-items:center;padding:0 12px}
+.sh-cols{height:28px;flex:none;font:600 9.5px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:#7a8f97;border-bottom:1px solid #dde5df}
+.rows{position:relative;flex:1;min-height:0;overflow:hidden}
+.row{position:absolute;left:0;right:0;top:0;height:var(--rh,28px);font:500 12.5px var(--mono);border-bottom:1px solid #e8ede8;background:#f7f9f5;transition:transform .7s cubic-bezier(.2,.9,.25,1.04),opacity .5s,background .4s,filter .5s,box-shadow .4s;will-change:transform}
+.row .cell{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;border-radius:4px;padding:1px 4px;transition:background .35s,color .35s}
+.cell.bad{background:#ffe1dc;color:var(--red-d);font-weight:600}
+.cell.warn{background:#ffefcc;color:#8a5a00}
+.cell.ok{background:#dcf4e6;color:#07695a}
+.src{font:600 9.5px var(--mono);letter-spacing:.03em;text-transform:uppercase;padding:2px 6px;border-radius:4px;background:var(--sc);color:#0b1f2c;justify-self:start;white-space:nowrap;overflow:hidden;max-width:100%;display:inline-block}
+.chips{display:flex;gap:4px;overflow:hidden;min-width:0}
+.chip{font:600 10px var(--mono);padding:2px 8px;border-radius:999px;white-space:nowrap;animation:chipin .4s cubic-bezier(.2,.9,.25,1.2)}
+@keyframes chipin{from{opacity:0;transform:scale(.6)}}
+.chip.r{background:#ffe1dc;color:var(--red-d)}
+.chip.a{background:#ffefcc;color:#8a5a00}
+.chip.g{background:#dcf4e6;color:#07695a}
+.chip.b{background:#dcecff;color:#1c5cab}
+.chip.l{background:var(--navy);color:var(--lime)}
+.row.hh{box-shadow:inset 4px 0 0 var(--hc)}
+.row.ready{background:#f0fad4;box-shadow:inset 4px 0 0 #7fae00}
+.row.gone{opacity:0;filter:blur(4px)}
+.ledger{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:14px;display:flex;flex-direction:column;min-height:0;overflow:hidden}
+.ledger h4{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mint);margin:0 0 4px}
+.ledger .sub{font-size:12.5px;color:#7f9ca3;margin:0 0 10px}
+.ledger ol{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:4px;flex:1;min-height:0;overflow:auto;scrollbar-width:none;scroll-behavior:smooth}
+.ledger ol::-webkit-scrollbar{display:none}
+.ledger li{flex:none;background:rgba(255,90,76,.09);border-left:3px solid var(--red);border-radius:6px;padding:4px 8px;animation:ledin .5s cubic-bezier(.2,.9,.25,1.15)}
+.ledger li b{display:block;color:#fff;font-size:12.5px;font-weight:600;line-height:1.25}
+.ledger li span{display:block;color:#ffb4ab;font:500 10px/1.3 var(--mono)}
+.ledger li.empty{background:none;border:0;animation:none;padding:0;color:#6f8c93;font-size:13px}
+@keyframes ledin{from{opacity:0;transform:translateX(-30px) scale(.9)}}
+.fixq{margin-top:10px;border-top:1px solid rgba(255,255,255,.12);padding-top:10px;font-size:13px;color:#cfe0dc;opacity:.35;transition:opacity .4s}
+.fixq.on{opacity:1}
+.fixq b{font:600 24px var(--mono);color:var(--lime);margin-right:8px;vertical-align:-3px}
+.fixq small{display:block;font:500 10.5px/1.5 var(--mono);color:#8fa9ad;margin-top:4px}
+.stamp{position:absolute;z-index:6;border:3px solid var(--red);color:var(--red);font:900 clamp(17px,2vw,24px)/1.1 var(--display);letter-spacing:.05em;padding:9px 16px;border-radius:9px;text-transform:uppercase;background:rgba(255,255,255,.85);opacity:0;pointer-events:none;text-align:center;transition:opacity .25s,transform .45s cubic-bezier(.2,1.5,.4,1)}
+.stamp small{display:block;font:600 10.5px var(--mono);letter-spacing:.06em;margin-top:3px}
+.stamp.ok{border-color:#5d8a00;color:#4b7200}
+#cl-stamp{right:5%;bottom:10%;transform:rotate(-6deg) scale(2.2)}
+#cl-stamp.on{opacity:1;transform:rotate(-6deg) scale(1)}
+.cl-body.thud{animation:thud .32s}
+@keyframes thud{20%{transform:translate(4px,-3px)}40%{transform:translate(-4px,2px)}60%{transform:translate(2px,2px)}80%{transform:translate(-1px,-1px)}}
+
+/* run */
+.run-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);margin-top:44px;align-items:start}
+.files{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px}
+.files h3{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--teal-d);margin:0 0 10px}
+.fin{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.fin li{display:flex;justify-content:space-between;gap:8px;font:500 12.5px var(--mono);background:#f3f6f2;border-radius:8px;padding:7px 10px;color:#34505c}
+.fin li b{color:var(--ink);font-weight:600}
+.arrow{display:flex;align-items:center;gap:12px;margin:14px 0;font:600 13px var(--mono);color:var(--teal-d)}
+.arrow:before,.arrow:after{content:'';flex:1;height:2px;background:repeating-linear-gradient(90deg,var(--teal-d) 0 6px,transparent 6px 12px);background-size:24px 2px;animation:march 1s linear infinite}
+.still .arrow:before,.still .arrow:after{animation:none}
+@keyframes march{to{background-position:24px 0}}
+.fout{display:grid;gap:8px}
+.fout a{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;text-decoration:none;border:1px solid var(--line);border-radius:12px;padding:12px 14px;transition:border-color .2s,transform .2s,box-shadow .2s}
+.fout a:hover{border-color:var(--teal-d);transform:translateY(-2px);box-shadow:0 10px 24px rgba(6,26,43,.08)}
+.fout i{width:34px;height:40px;border-radius:5px;background:#1d6f42;color:#fff;font:700 10px var(--mono);font-style:normal;display:grid;place-items:center}
+.fout b{display:block;font:600 13px var(--mono);color:var(--ink);word-break:break-all}
+.fout span{font-size:13.5px;color:var(--muted)}
+.fout em{font-style:normal;font:600 12px var(--mono);color:var(--teal-d)}
+.acc{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.acc div{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.acc b{display:block;font:800 30px/1.05 var(--display);letter-spacing:-.03em;color:var(--navy)}
+.acc b em{font-style:normal;font-size:14px;color:var(--teal-d);letter-spacing:0;font-weight:700}
+.acc span{font-size:13.5px;color:var(--muted);line-height:1.4;display:block;margin-top:4px}
+.honest{margin-top:14px;font-size:14.5px;color:#34505c;border-left:3px solid var(--teal-d);padding:4px 0 4px 14px}
+.wf-box{background:#fff;border:1px solid var(--line);border-radius:22px;padding:clamp(16px,2.2vw,26px);box-shadow:0 30px 80px rgba(6,26,43,.08)}
+.wf-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px}
+.wf-top h3{margin:0;font-size:16px;font-weight:700}
+.seg{display:inline-flex;background:#eef2ec;border-radius:999px;padding:4px;gap:2px}
+.seg button{border:0;background:transparent;padding:8px 14px;border-radius:999px;font:600 12.5px var(--display);color:var(--muted);cursor:pointer}
+.seg button[aria-pressed=true]{background:var(--navy);color:#fff}
+.replay{border:0;background:transparent;font:600 13px var(--display);color:var(--teal-d);cursor:pointer;padding:8px 4px}
+.wf{position:relative}
+#wf-c{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
+.wf-row{display:grid;grid-template-columns:30px minmax(0,1fr) 30% 78px;align-items:center;gap:10px;height:34px;border-top:1px solid #edf1ec;font-size:13.5px}
+.wf-row .n{font:500 10.5px var(--mono);color:#97a8ad}
+.wf-row .l{min-width:0;line-height:1.2}
+.wf-row .c{font:600 13px var(--mono);text-align:right;color:var(--red-d);font-variant-numeric:tabular-nums}
+.wf-row.start,.wf-row.final{height:46px;font-weight:800;border-top:0}
+.wf-row.start .c{color:var(--ink)}
+.wf-row.final{border-top:2px solid var(--ink)}
+.wf-row.final .c{color:var(--teal-d);font-size:19px}
+.wf-row.hold .c{color:#bd7a0c}
+.wf-row .c.bump{animation:bump .25s}
+@keyframes bump{50%{transform:scale(1.12)}}
+.wf-foot{margin:10px 0 0;font:500 11.5px/1.6 var(--mono);color:var(--muted)}
+
+/* engine */
+.eng{position:relative;margin-top:46px;display:grid;grid-template-columns:230px 250px minmax(0,1fr);gap:clamp(40px,6vw,90px);align-items:center}
+#eng-c{position:absolute;inset:-10px;width:calc(100% + 20px);height:calc(100% + 20px);pointer-events:none;z-index:0}
+.eng>div{position:relative;z-index:1}
+.grp{font:600 10.5px var(--mono);letter-spacing:.12em;color:#7f9ca3;margin:0 0 8px;text-transform:uppercase}
+.grp.p2{margin-top:18px}
+.enode{display:flex;align-items:center;gap:10px;background:var(--navy2);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:9px 14px;margin-bottom:7px;font-size:14px;font-weight:600;color:#fff}
+.enode i{width:8px;height:8px;border-radius:50%;background:var(--teal);flex:none;box-shadow:0 0 10px var(--teal)}
+.enode.pub i{background:var(--sky);box-shadow:0 0 10px var(--sky)}
+.core{background:linear-gradient(180deg,#0d3150,#082037);border:1px solid rgba(215,247,117,.35);border-radius:22px;padding:20px 16px;text-align:center;box-shadow:0 0 60px rgba(18,161,152,.18)}
+.core>p{font:600 10.5px/1.6 var(--mono);letter-spacing:.12em;color:var(--mint);margin:0 0 14px;text-transform:uppercase}
+.stg{border-radius:14px;padding:12px 8px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);font-weight:700;color:#fff;font-size:15px;animation:stg 4.5s infinite}
+.stg small{display:block;font:500 10.5px var(--mono);color:#8fb3b0;margin-top:2px}
+.stg:nth-of-type(2){animation-delay:1.5s}.stg:nth-of-type(3){animation-delay:3s}
+@keyframes stg{0%,30%{border-color:var(--lime);box-shadow:0 0 24px rgba(215,247,117,.25);background:rgba(215,247,117,.08)}40%,100%{border-color:rgba(255,255,255,.1);box-shadow:none;background:rgba(255,255,255,.03)}}
+.still .stg{animation:none}
+.chev{color:var(--mint);margin:5px 0;font-size:14px}
+.obox{border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:14px;margin-bottom:14px;background:rgba(255,255,255,.02)}
+.obox p{font:600 10.5px var(--mono);letter-spacing:.12em;color:#7f9ca3;margin:0 0 10px;text-transform:uppercase;text-align:center}
+.oitems{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.obox.b4 .oitems{grid-template-columns:repeat(4,1fr)}
+.oitem{background:var(--navy2);border:1px solid rgba(255,255,255,.1);border-radius:10px;padding:10px 6px;text-align:center;font-size:12.5px;font-weight:600;line-height:1.25;color:#e6efec}
+.obox.main .oitem{border-color:rgba(215,247,117,.4);color:#fff;font-size:13.5px;padding:12px 6px}
+.how{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:54px}
+.how article{background:var(--navy2);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:22px}
+.how .n{font:600 11px var(--mono);color:var(--lime);letter-spacing:.1em}
+.how h3{font-size:21px;margin:6px 0 12px;color:#fff;letter-spacing:-.01em}
+.how ul{margin:0;padding:0;list-style:none}
+.how li{position:relative;padding:0 0 10px 16px;font-size:15px;color:#c7d8d4;line-height:1.5}
+.how li:before{content:'';position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--teal)}
+.how li b{color:#fff;font-weight:600}
+.outs{margin-top:16px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.outs div{border:1px solid rgba(215,247,117,.3);border-radius:16px;padding:16px 18px;background:rgba(215,247,117,.04)}
+.outs b{display:block;color:var(--lime);font-size:16px;margin-bottom:4px}
+.outs span{font-size:14.5px;color:#c7d8d4}
+
+/* mosquito */
+.mq-scene{position:relative;margin-top:40px;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,#0b2942,#0a2238 60%,#081c2e);border:1px solid rgba(255,255,255,.08)}
+#mq-c{display:block;width:100%;height:clamp(300px,34vw,420px)}
+.mq-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.mq-grid article{background:var(--navy2);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px}
+.mq-grid h3{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--lime);margin:0 0 8px}
+.mq-grid p,.mq-grid li{font-size:14.5px;color:#c7d8d4;line-height:1.5;margin:0}
+.mq-grid ul{margin:0;padding-left:16px}
+.mq-grid li{margin-bottom:4px}
+.mq-grid .eg{margin-top:10px;font:500 12px/1.5 var(--mono);color:#9fc9c2;background:rgba(255,255,255,.04);border-radius:8px;padding:8px 10px}
+.today{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:24px;margin-top:18px;align-items:start}
+.today-copy{background:rgba(255,255,255,.03);border:1px dashed rgba(255,255,255,.2);border-radius:16px;padding:20px}
+.today-copy h3{margin:0 0 8px;font-size:18px;color:#fff}
+.today-copy p{font-size:15px;color:#c7d8d4;margin:0 0 12px}
+.trigger label{display:flex;justify-content:space-between;gap:10px;font:500 12.5px var(--mono);color:#a9c1bd}
+.trigger label b{color:var(--lime);font-size:14px}
+input[type=range]{width:100%;accent-color:var(--lime);margin:12px 0 4px;height:28px}
+.readout{font-size:16px;color:#fff;margin:4px 0 0}
+.readout b{color:var(--lime);font:600 26px var(--mono);vertical-align:-3px}
+.rstats{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:14px;color:#a9c1bd}
+.rstats b{display:block;font:600 22px var(--mono);color:#fff}
+.rain-map{position:relative;background:var(--navy2);border-radius:16px;padding:14px;border:1px solid rgba(255,255,255,.08)}
+#rain-c{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:3}
+.stt{margin-bottom:10px}.stt:last-child{margin-bottom:0}
+.stt h4{font:600 10px var(--mono);letter-spacing:.12em;color:#7f9ca3;margin:0 0 6px;text-transform:uppercase}
+.zips{display:grid;grid-template-columns:repeat(auto-fill,minmax(52px,1fr));gap:4px}
+.z{border-radius:6px;padding:4px 5px;background:var(--bg);font-family:var(--mono);line-height:1.2;border:1px solid transparent;transition:box-shadow .35s,border-color .35s}
+.z b{display:block;font-size:9.5px;font-weight:600;color:#e7f0ee}
+.z i{font-style:normal;font-size:9.5px;color:#cfe0f5}
+.z.on{border-color:var(--lime);box-shadow:0 0 14px rgba(215,247,117,.3)}
+.z.on i{color:var(--lime);font-weight:600}
+
+/* about */
+.story{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);margin-top:40px;align-items:start}
+.feature{background:var(--navy);color:#e6efec;border-radius:22px;padding:28px;position:relative;overflow:hidden}
+.feature canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.6}
+.feature>*{position:relative}
+.feature .big{font:800 clamp(52px,6vw,84px)/1 var(--display);color:var(--lime);letter-spacing:-.045em;margin:12px 0 8px}
+.feature p{color:#c7d8d4;margin:0 0 12px;font-size:16px}
+.feature p b{color:#fff}
+.creds{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.creds li{background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px 18px}
+.creds b{display:block;font-size:16.5px;margin-bottom:3px;color:var(--ink)}
+.creds span{font-size:15px;color:var(--muted)}
+.facts{margin-top:18px;background:#fff;border:2px solid var(--ink);border-radius:20px;padding:6px 22px}
+.facts div{display:grid;grid-template-columns:150px 1fr;gap:16px;padding:12px 0;border-top:1px solid #edf1ec}
+.facts div:first-child{border-top:0}
+.facts dt{font:600 10.5px/1.7 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--teal-d)}
+.facts dd{margin:0;font-size:15px;color:#23404c}
+.facts dd b{color:var(--ink)}
+.facts dl{margin:0}
+.recog{margin-top:16px;display:flex;flex-wrap:wrap;gap:6px}
+.recog span{font:500 12px var(--mono);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 11px;color:#34505c}
+.recog span b{color:var(--teal-d)}
+
+/* next */
+.next{background:radial-gradient(900px 500px at 80% 20%,#0f3452,var(--navy) 65%)}
+.phases{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.phase{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:20px}
+.phase .wk{font:600 11.5px var(--mono);color:var(--lime);letter-spacing:.08em}
+.phase h3{font-size:20px;margin:6px 0 8px;color:#fff}
+.phase p{font-size:14.5px;color:#bcd0cc;margin:0}
+.phase p b{color:#fff;font-weight:600}
+.gonogo{font:500 12.5px var(--mono);color:#a9c1bd;margin-top:14px}
+.ct{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(24px,4vw,56px);margin-top:60px;align-items:center}
+.ct h2{font-size:clamp(34px,4.2vw,58px);line-height:1.02;letter-spacing:-.035em;font-weight:900;margin:14px 0 16px;color:#fff}
+.ct ol{margin:0;padding:0;list-style:none;counter-reset:s}
+.ct ol li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:8px;padding:8px 0;color:#c7d8d4;font-size:16px}
+.ct ol li:before{content:counter(s,decimal-leading-zero);font:600 13px var(--mono);color:var(--lime);padding-top:3px}
+.card{background:#fff;color:var(--ink);border-radius:22px;padding:26px;box-shadow:0 40px 80px rgba(0,0,0,.35)}
+.card .who{font-size:22px;font-weight:800;letter-spacing:-.02em}
+.card .role{color:var(--muted);font-size:14.5px;margin-bottom:14px}
+.card a.l{display:block;font:500 14.5px/2 var(--mono);color:var(--teal-d);text-decoration:none;word-break:break-word}
+.card a.l:hover{text-decoration:underline}
+.card .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+footer{background:#040f1a;color:#7f979c;font:500 12px/1.7 var(--mono);padding:26px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+.still .reveal{opacity:1;transform:none;transition:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+@media (max-width:1180px){
+  .navlinks{display:none}
+  .cl-body{grid-template-columns:minmax(0,1fr) 240px}
+  .sh-cols,.row{grid-template-columns:64px minmax(0,1.2fr) minmax(0,.8fr) minmax(0,1.5fr) minmax(0,1.4fr)}
+  .c-city{display:none}
+  .glance .wrap{grid-template-columns:repeat(3,1fr)}
+  .gl:nth-child(3n+1){border-left:0;padding-left:0}
+  .gl{border-top:1px solid rgba(255,255,255,.08)}
+  .gl:nth-child(-n+3){border-top:0}
+}
+@media (max-width:1000px){
+  .run-grid,.story,.ct,.today{grid-template-columns:1fr}
+  .eng{grid-template-columns:1fr;gap:34px}
+  .eng-in{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
+  .eng-in .grp{grid-column:1/-1}
+  .how,.outs,.phases{grid-template-columns:1fr}
+  .mq-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .cl{padding:70px 12px 10px;gap:8px}
+  .cl-prog{font-size:0;margin-bottom:8px}
+  .cl-prog li{padding-top:0}
+  .cl-cap{min-height:124px}
+  .cl-cap h2{font-size:22px}
+  .cl-cap p{font-size:14px;line-height:1.45}
+  .cl-body{grid-template-columns:1fr}
+  .ledger{display:none}
+  .sh-bar .mcount{display:inline-block}
+  .sh-cols,.row{grid-template-columns:minmax(0,1fr) minmax(0,1.25fr) minmax(0,1.1fr);gap:6px;padding:0 8px}
+  .c-src,.c-last,.c-city{display:none}
+  .row{font-size:11px}
+  .chip{font-size:9px;padding:2px 6px}
+  .row.hh{box-shadow:inset 3px 0 0 var(--hc)}
+  #cl-stamp{bottom:6%}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  .brand img{height:24px}.brand .ms{font-size:15px}.brand .x{font-size:15px}
+  .motion{display:none}
+  .nav .btn{padding:10px 14px;font-size:13px}
+  .hero-copy{justify-content:flex-start;padding-top:96px}
+  .hero-shade{background:linear-gradient(180deg,rgba(6,26,43,.92) 0%,rgba(6,26,43,.78) 58%,rgba(6,26,43,0) 72%)}
+  .hero-h{font-size:clamp(40px,12vw,56px)}
+  .hero-sub{font-size:16px}
+  .hero-meter{margin-top:18px}
+  .hero-actions{margin-top:18px}
+  .cue{display:none}
+  .glance .wrap{grid-template-columns:1fr 1fr}
+  .gl,.gl:nth-child(3n+1){border-left:0;padding-left:0}
+  .gl:nth-child(even){border-left:1px solid rgba(255,255,255,.08);padding-left:14px}
+  .gl:nth-child(-n+3){border-top:1px solid rgba(255,255,255,.08)}
+  .gl:nth-child(-n+2){border-top:0}
+  .fin{grid-template-columns:1fr}
+  .wf-row{grid-template-columns:22px minmax(0,1fr) 24% 64px;gap:7px;height:44px;font-size:12px}
+  .wf-row .c{font-size:12px}
+  .mq-grid{grid-template-columns:1fr}
+  .facts div{grid-template-columns:1fr;gap:2px}
+  .eng-in{grid-template-columns:1fr}
+  .obox.b4 .oitems{grid-template-columns:repeat(2,1fr)}
+  .acc b{font-size:24px}
+}
+</style>
+<noscript><style>.reveal{opacity:1;transform:none}#hero{height:100vh}</style></noscript>
+</head>
+<body>
+<div id="bar"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#hero" aria-label="Drummond Carpenter, response to Massey Services">
+    <img src="dc-logo.png" alt="Drummond Carpenter">
+    <span class="x" aria-hidden="true">×</span>
+    <span class="ms">MASSEY</span>
+  </a>
+  <nav class="navlinks" aria-label="Sections">
+    <a href="#clean">Watch it clean</a>
+    <a href="#run">The test run</a>
+    <a href="#how">How it works</a>
+    <a href="#mosquito">Mosquito model</a>
+    <a href="#about">About us</a>
+  </nav>
+  <div class="navr">
+    <button class="motion" id="motion" type="button" aria-pressed="false">Motion on</button>
+    <a class="btn btn-lime" href="#next">Contact</a>
+  </div>
+</header>
+
+<main>
+<section id="hero" class="pin" aria-label="Introduction">
+  <div class="sticky">
+    <canvas id="swarm" aria-hidden="true"></canvas>
+    <div class="hero-shade"></div>
+    <div class="hero-copy">
+      <p class="kicker">Enterprise Reverse Pitch · Massey Services</p>
+      <h1 class="hero-h" aria-label="From messy data to Massey data.">
+        <span class="messy" id="messy" aria-hidden="true">From messy data</span>
+        <span class="clean" id="clean-h" aria-hidden="true">to Massey data.</span>
+      </h1>
+      <p class="hero-sub">That was TJ's line on September 17. We went home and built it. The tool takes the Sunday exports as they come and hands back a mailing list, a reason for every name it cut, and a file of fixes for ServSuite.</p>
+      <div class="hero-meter"><b id="hero-n">48,539</b><span id="hero-l">sample customer records across 9 spreadsheets</span></div>
+      <div class="hero-actions">
+        <a class="btn btn-lime" href="#clean">Watch it clean ↓</a>
+        <a class="btn btn-ghost" href="Drummond-Carpenter-Massey-One-Pager.pdf" download>One-pager (PDF)</a>
+      </div>
+    </div>
+    <div class="cue" id="cue" aria-hidden="true">Scroll<i></i></div>
+  </div>
+</section>
+
+<section class="glance" aria-label="Drummond Carpenter at a glance">
+  <div class="wrap">
+    <div class="gl"><b>Who</b><span>Drummond Carpenter, a Service-Disabled Veteran-Owned Small Business</span></div>
+    <div class="gl"><b>Where</b><span>HQ in Maitland, FL. Offices in FL, MI, PA and TN</span></div>
+    <div class="gl"><b>Size</b><span>40+ employees, 10+ in data science and GIS</span></div>
+    <div class="gl" id="rev-gl" hidden><b>Revenue</b><span class="rev"></span></div>
+    <div class="gl"><b>Large clients</b><span>DOE, DOD, NASA, VA, EPA. 40+ state and local agencies</span></div>
+    <div class="gl"><b>Security</b><span>Cyber practices for sensitive and controlled federal data</span></div>
+    <div class="gl"><b>Track record</b><span>400+ projects, 25+ states, 85% repeat clients</span></div>
+  </div>
+</section>
+
+<section id="clean" class="pin" aria-label="Watch the tool clean a Sunday export">
+  <div class="sticky">
+    <div class="cl">
+      <canvas id="cl-fx" aria-hidden="true"></canvas>
+      <div class="cl-head">
+        <ol class="cl-prog" id="cl-prog" aria-hidden="true">
+          <li>1 Export</li><li>2 Read</li><li>3 Standardize</li><li>4 Households</li><li>5 Parcels + leads</li><li>6 Campaign rules</li><li>7 Mail-ready</li>
+        </ol>
+        <div class="cl-cap" id="cl-cap">
+          <div><h2>A Sunday export, as it arrives.</h2><p>Nineteen rows from six of the nine files. Same people on more than one list, and the problems TJ showed on stage. These rows come straight from our sample data.</p></div>
+          <div><h2>Read every field, like a person would.</h2><p>"Do not contact" and "Deceased" get typed into name fields and notes, with the checkboxes left blank. TJ's example was "Dear Martha, Deceased." The tool catches the pattern before anything prints.</p></div>
+          <div><h2>Put everything in one format.</h2><p>Joint names come in with a slash, an ampersand or "and." Addresses come in as Street, St. or ST. The tool writes them one way so the same home looks the same on every list.</p></div>
+          <div><h2>One household, one row.</h2><p>Accounts at the same address with the same name and phone become one household, even with Donna Nelson's misspelled street. 1027 Heron Ter in Sarasota and 1027 Heron Ter in Atlanta stay two.</p></div>
+          <div><h2>Check the parcel and the lead log.</h2><p>The county parcel settles house versus townhouse. The lead log has no account numbers, so the tool matches it by address and finds Hector Watson's open termite quote.</p></div>
+          <div><h2>Run the campaign rules, in order.</h2><p>Fall termite mailer: Florida pest and lawn customers in houses. Every household a rule removes lands in the waterfall report with the rule and the evidence.</p></div>
+          <div><h2>Two letters. Nothing to clean up.</h2><p>Nineteen rows became two households, one piece each. Everything the tool fixed goes into an import file for ServSuite, so next Sunday starts cleaner.</p></div>
+        </div>
+      </div>
+      <div class="cl-body" id="cl-body">
+        <div class="sheet" id="sheet">
+          <div class="sh-bar"><span id="sh-title">Sunday export · 19 rows from 6 files</span><span class="mcount" id="mcount">Removed 0</span></div>
+          <div class="sh-cols"><span class="c-src">File</span><span>First name</span><span class="c-last">Last name</span><span>Address</span><span class="c-city">City</span><span>Found</span></div>
+          <div class="rows" id="rows"></div>
+          <div class="stamp ok" id="cl-stamp">Mail-ready<small>2 households · 1 piece each</small></div>
+        </div>
+        <aside class="ledger" aria-live="polite">
+          <h4>Removed, with the reason</h4>
+          <p class="sub">This is the waterfall report TJ asked for.</p>
+          <ol id="ledger"></ol>
+          <div class="fixq" id="fixq"><b id="fixn">0</b>fixes queued for ServSuite<small>7 names · 5 household links · 3 DNC/deceased flags · 1 property type · 1 lead link · 1 address to review</small></div>
+        </aside>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="run" class="sec light">
+  <div class="wrap">
+    <div class="sec-h reveal">
+      <p class="kicker">The test run</p>
+      <h2>Then we ran all 48,539.</h2>
+      <p class="lede">We generated nine spreadsheets that look like a Sunday export, with every problem TJ and Rebecca described planted in them and an answer key on the side. Then we ran the tool and graded its work. No Massey data was used.</p>
+    </div>
+    <div class="run-grid">
+      <div class="reveal">
+        <div class="files">
+          <h3>9 files in</h3>
+          <ul class="fin">
+            <li>Pest customers<b>25,208</b></li><li>Termite customers<b>9,038</b></li>
+            <li>Lawn customers<b>7,017</b></li><li>Mosquito customers<b>3,316</b></li>
+            <li>Irrigation customers<b>1,860</b></li><li>Acquired company<b>2,100</b></li>
+            <li>Lead log<b>2,800</b></li><li>Do-not-contact master<b>1,661</b></li>
+            <li>Mail and email history<b>13,300</b></li>
+          </ul>
+          <div class="arrow">53 seconds</div>
+          <h3>3 files out (download them)</h3>
+          <div class="fout">
+            <a href="samples/Termite_Mail_Ready_List.xlsx" download><i>XLSX</i><div><b>Termite_Mail_Ready_List.xlsx</b><span>6,987 households, scored A, B or C, each with the reason</span></div><em>↓</em></a>
+            <a href="samples/Termite_Mail_Waterfall.xlsx" download><i>XLSX</i><div><b>Termite_Mail_Waterfall.xlsx</b><span>Every record removed, the rule and the evidence</span></div><em>↓</em></a>
+            <a href="samples/CRM_Corrections.xlsx" download><i>XLSX</i><div><b>CRM_Corrections.xlsx</b><span>Fixes for ServSuite: 8,108 household links, 35,140 property types from parcels, 1,224 missing DNC flags</span></div><em>↓</em></a>
+          </div>
+        </div>
+        <div class="acc">
+          <div><b><span data-count="1598">1,598</span><em> / 1,603</em></b><span>do-not-contact households caught, 1 false alarm</span></div>
+          <div><b><span data-count="325">325</span><em> / 326</em></b><span>deceased households caught, 0 false alarms</span></div>
+          <div><b><span data-count="99.6" data-dec="1">99.6</span><em>%</em></b><span>of household links correct</span></div>
+          <div><b>0</b><span>households merged across cities, out of 198 street addresses that repeat</span></div>
+        </div>
+        <p class="honest">Your real data will be messier than ours in ways we can't guess. Phase 1 measures these same numbers on one of your Sunday exports before anything gets mailed.</p>
+      </div>
+      <div class="wf-box reveal d1">
+        <div class="wf-top">
+          <h3 id="wf-title">Fall termite offer · direct mail · Florida</h3>
+          <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">
+            <div class="seg" role="group" aria-label="Campaign">
+              <button type="button" data-wf="termite" aria-pressed="true">Termite mail</button>
+              <button type="button" data-wf="mosquito" aria-pressed="false">Mosquito email</button>
+            </div>
+            <button class="replay" id="wf-replay" type="button">↻ Replay</button>
+          </div>
+        </div>
+        <div class="wf" id="wf"><canvas id="wf-c" aria-hidden="true"></canvas><div id="wf-rows"></div></div>
+        <p class="wf-foot">Each dot is about 35 records. Red dots peel off at the rule that removed them.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="sec dark">
+  <div class="wrap">
+    <div class="sec-h reveal">
+      <p class="kicker">How it works</p>
+      <h2>Your data in. Smart targeting out.</h2>
+      <p class="lede">Same engine as our one-pager. Massey's exports and three public datasets go in, three stages run, and you get clean lists every week plus the targeting that comes once every household is on the map.</p>
+    </div>
+    <div class="eng reveal" id="eng">
+      <canvas id="eng-c" aria-hidden="true"></canvas>
+      <div class="eng-in">
+        <p class="grp">Massey data</p>
+        <div class="enode" data-in><i></i>ServSuite</div>
+        <div class="enode" data-in><i></i>Lead Log</div>
+        <div class="enode" data-in><i></i>Acquired Companies</div>
+        <div class="enode" data-in><i></i>Campaign Rules</div>
+        <p class="grp p2">Public data</p>
+        <div class="enode pub" data-in><i></i>County Parcels</div>
+        <div class="enode pub" data-in><i></i>Weather</div>
+        <div class="enode pub" data-in><i></i>Water &amp; Wetlands</div>
+      </div>
+      <div class="core" id="core">
+        <p>Drummond Carpenter<br>custom AI engine</p>
+        <div class="stg">Data Preprocessing<small>clean + match</small></div>
+        <div class="chev">⌄</div>
+        <div class="stg">Spatial Analysis<small>every home on its parcel</small></div>
+        <div class="chev">⌄</div>
+        <div class="stg">Machine Learning<small>who, when, where</small></div>
+      </div>
+      <div class="eng-out">
+        <div class="obox main" data-out><p>Clean data, every week</p><div class="oitems"><div class="oitem">Mail-Ready Lists</div><div class="oitem">Waterfall Report</div><div class="oitem">ServSuite Fixes</div></div></div>
+        <div class="obox b4" data-out><p>Beyond the mail list</p><div class="oitems">
+          <div class="oitem">Interactive Maps</div><div class="oitem">Lead Scoring</div><div class="oitem">Rain-Timed Campaigns</div><div class="oitem">Neighbor Leads</div>
+          <div class="oitem">New Prospects</div><div class="oitem">Territory Insights</div><div class="oitem">Property Profiles</div><div class="oitem">Response Tracking</div></div></div>
+      </div>
+    </div>
+
+    <div class="how">
+      <article class="reveal">
+        <span class="n">STAGE 1</span><h3>Data Preprocessing</h3>
+        <ul>
+          <li><b>Reads the Sunday exports as they come.</b> Nobody on your team reformats anything first.</li>
+          <li><b>Finds do-not-contact, deceased and "no mail" wherever it's typed:</b> the checkboxes, name fields, notes and the master DNC list. Rules catch the common patterns. An AI model reads the free text the rules miss, and a person confirms anything it isn't sure about.</li>
+          <li><b>Writes names and addresses one way</b>, so "Kenneth/Jennifer," "HELEN AND CHRISTOPHER" and "1071 West Whisper Wood Way" all match their other records.</li>
+          <li><b>Links accounts into households</b> by address, name and phone. It tolerates typos, never links across cities, and respects the Do Not Merge flag.</li>
+        </ul>
+      </article>
+      <article class="reveal d1">
+        <span class="n">STAGE 2</span><h3>Spatial Analysis</h3>
+        <ul>
+          <li><b>Puts every address on its county parcel.</b> The parcel says house, townhouse or condo and the year it was built. In the test run, 35,140 accounts had a blank or wrong property type.</li>
+          <li><b>Keeps cities apart.</b> The same street in Houston and Dallas is two parcels, so suppressing one never suppresses the other.</li>
+          <li><b>Measures distance to ponds, canals and wetlands</b> from the National Wetlands Inventory and county water layers, for mosquito and termite targeting.</li>
+          <li><b>Finds neighbors:</b> homes on streets where Massey already has customers but that are missing the service their neighbors buy.</li>
+        </ul>
+      </article>
+      <article class="reveal d2">
+        <span class="n">STAGE 3</span><h3>Machine Learning</h3>
+        <ul>
+          <li><b>Scores every household for its next best offer</b> using Rebecca's signals: recent service, other services held, referrals, response to past mail, and years with only one service.</li>
+          <li><b>Starts with simple points on day one.</b> The test run already ranks the termite list into 2,484 A, 3,799 B and 704 C households.</li>
+          <li><b>Learns from your response history</b> once campaigns go out, and we report whether Tier A actually beats Tier C.</li>
+          <li><b>Predicts where mosquito demand jumps next</b> from rain, forecasts and nearby water. That model is explained below.</li>
+        </ul>
+      </article>
+    </div>
+    <div class="outs reveal">
+      <div><b>Mail-ready list</b><span>One row per household, ready for the mail house or the email platform. No nine sheets, no 19 steps.</span></div>
+      <div><b>Waterfall report</b><span>Every removed customer, the rule that removed them and the evidence, so you can show the suppression rules were applied.</span></div>
+      <div><b>ServSuite fixes</b><span>An import file your team reviews and loads. Removing someone from a do-not-contact list always takes a person's sign-off.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="mosquito" class="sec dark" style="background:#050f1b">
+  <div class="wrap">
+    <div class="sec-h reveal">
+      <p class="kicker">The mosquito model</p>
+      <h2>"It rained a lot in Houston."</h2>
+      <p class="lede">That was TJ's example of a perfect mosquito lead, and the timing is the whole game. Mosquito numbers jump about a week after heavy rain. TJ said a one-day delay can cost a week in the field. The model's job is to spot the rain early so the email lands before the bites start.</p>
+    </div>
+    <div class="mq-scene reveal"><canvas id="mq-c" aria-label="Animation: heavy rain on day 0, the model flags the zip on day 2, the email lands on day 3, mosquitoes hatch around day 7, calls come in after that"></canvas></div>
+    <div class="mq-grid">
+      <article class="reveal"><h3>What it predicts</h3><p>For every zip code, every day in season: how many mosquito sign-ups and calls to expect over the next two weeks. Then which households in those zips to email first.</p></article>
+      <article class="reveal d1"><h3>What it learns from</h3><ul>
+        <li>Rain over the last 7 and 14 days, compared with normal for that week (NOAA)</li>
+        <li>Rain in the 7-day forecast</li>
+        <li>Temperature, since warm weeks speed up the cycle</li>
+        <li>How close homes sit to ponds, canals and wetlands</li>
+        <li>Massey's own past mosquito sign-ups and leads, by zip and week</li>
+        <li>The household: services, home type, neighbors on mosquito service, past response</li></ul></article>
+      <article class="reveal d2"><h3>How we build and check it</h3><p>A gradient-boosted tree model trained on past seasons of your sales and lead history matched to weather history. It works well on tables like this, and it shows which inputs drove each prediction. We test it on a season it never saw. It only replaces the simple rule if it beats the rule.</p></article>
+      <article class="reveal d3"><h3>What you get</h3><p>A short list each morning in rainy season: the zips about to jump and the households to email, each with the reason.</p><div class="eg">77079 Houston: 6.08 in. of rain in 14 days, 3.6× normal for the week. Email the households there without mosquito service.</div></article>
+    </div>
+    <div class="today">
+      <div class="today-copy reveal">
+        <h3>What the demo does today</h3>
+        <p>A plain rule: email only zip codes with at least 3 inches of rain in the last 14 days. Everyone else is held for the next storm, not dropped. Drag the trigger to see which of the 69 sample zips light up.</p>
+        <div class="trigger">
+          <label for="rt"><span>Rain in the last 14 days</span><b id="rt-v">3.0 in</b></label>
+          <input id="rt" type="range" min="1" max="6" step="0.5" value="3">
+          <p class="readout"><b id="rt-n">26</b> of <span id="rt-tot">69</span> zips get the email this week</p>
+        </div>
+        <div class="rstats"><div><b>3,545</b>emails ready at 3 in.</div><div><b>10,388</b>held for the next rain</div><div><b>4,505</b>bad addresses caught, like ".cm"</div></div>
+      </div>
+      <div class="rain-map reveal d1" id="rain-map"><canvas id="rain-c" aria-hidden="true"></canvas><div id="states"></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="sec light">
+  <div class="wrap">
+    <div class="sec-h reveal">
+      <p class="kicker">Who we are</p>
+      <h2>Messy records tied to real places. That's our day job.</h2>
+      <p class="lede">Drummond Carpenter is a service-disabled veteran-owned firm in Maitland, just up I-4 from Massey. Our data team works alongside the GIS analysts and civil engineers who use county parcels, rainfall and wetlands data every day. That's why our approach starts at the parcel.</p>
+    </div>
+    <div class="story">
+      <div class="feature reveal">
+        <canvas id="dots" aria-hidden="true"></canvas>
+        <p class="kicker">We've done this before</p>
+        <div class="big">100,000+</div>
+        <p><b>assets pulled from many messy datasets and mapped to parcels for Orange County, Florida.</b> That work now backs the county's infrastructure funding plan.</p>
+        <p>Different assets, same problem Massey has: lots of records that don't agree, and every one of them belongs to a real place.</p>
+      </div>
+      <div class="reveal d1">
+        <ul class="creds">
+          <li><b>We build what local governments decide with.</b><span>Dashboards and maps that counties use to set priorities, run operations and explain decisions to the public.</span></li>
+          <li><b>We work with sensitive data.</b><span>For federal and private clients, cybersecurity practices are built into our projects, including work with controlled information.</span></li>
+          <li><b>We check our own work.</b><span>Quality control and independent technical review, built to hold up under regulatory scrutiny.</span></li>
+        </ul>
+        <div class="facts">
+          <dl>
+            <div><dt>Company size</dt><dd><b>40+ employees</b>, 10+ in data science and GIS</dd></div>
+            <div id="rev-row" hidden><dt>Annual revenue</dt><dd class="rev"></dd></div>
+            <div><dt>Ownership</dt><dd>Service-Disabled Veteran-Owned Small Business</dd></div>
+            <div><dt>Larger clients</dt><dd>Federal: <b>DOE, DOD, NASA, VA, EPA</b>. State and local: <b>40+ agencies</b>, including Orange County and the City of Orlando</dd></div>
+            <div><dt>Security</dt><dd>Cybersecurity practices on federal and private projects that handle sensitive or controlled information</dd></div>
+            <div><dt>Offices</dt><dd>Maitland, FL (HQ), plus Michigan, Pennsylvania and Tennessee</dd></div>
+          </dl>
+        </div>
+        <div class="recog">
+          <span><b>2026</b> Florida Trend Best Companies to Work For</span>
+          <span><b>2025</b> SBA Florida SDVOSB of the Year</span>
+          <span><b>2025</b> Orlando Business Journal Fast 50, #7</span>
+          <span><b>2025</b> Zweig Group Hot Firm, #49</span>
+          <span><b>2025</b> Tampa Bay Estuary Program Hackathon, 1st</span>
+          <span><b>2025</b> KP Reddy Hackathon</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="next" class="sec next">
+  <div class="wrap">
+    <div class="sec-h reveal">
+      <p class="kicker">The plan</p>
+      <h2>Three phases. Stop after any of them.</h2>
+      <p class="lede">These are the three ways TJ invited responses, done in order.</p>
+    </div>
+    <div class="phases">
+      <article class="phase reveal"><span class="wk">WEEKS 1–3</span><h3>Build the foundation</h3><p>Sign your NDA, run the tool on one real Sunday export, and turn the 19 mail-house steps into written rules. <b>You get the waterfall and fixes on your own data, and accuracy measured against it.</b></p></article>
+      <article class="phase reveal d1"><span class="wk">WEEKS 4–9</span><h3>Design the solution</h3><p>Connect to the weekly exports, set up a review screen for uncertain matches, and agree the ServSuite write-back with IT and BI. <b>You get the tool running every Sunday and lead scoring version 1.</b></p></article>
+      <article class="phase reveal d2"><span class="wk">WEEKS 10–16</span><h3>Prove it in practice</h3><p>Run one direct-mail and one email campaign through the tool next to today's process. <b>You get side-by-side results: hours saved, zero DNC or deceased mailed, zero duplicates, response by tier.</b></p></article>
+    </div>
+    <p class="gonogo reveal">Each phase ends with a go or no-go decision.</p>
+    <div class="ct">
+      <div class="reveal">
+        <p class="kicker">Next step</p>
+        <h2>Give us an hour and one Sunday export.</h2>
+        <ol>
+          <li>An hour with Rebecca, TJ, the marketing managers and someone from IT or BI. We run this live and walk your 19 steps together.</li>
+          <li>You send one Sunday export under NDA. It stays in your environment.</li>
+          <li>Within two weeks you see the waterfall and the fixes on your own data.</li>
+        </ol>
+      </div>
+      <div class="card reveal d1">
+        <div class="who">Chad Drummond</div>
+        <div class="role">CEO, Drummond Carpenter</div>
+        <a class="l" href="mailto:cdrummond@drummondcarpenter.com">cdrummond@drummondcarpenter.com</a>
+        <a class="l" href="tel:+14074171220">(407) 417-1220</a>
+        <a class="l" href="https://drummondcarpenter.com/data-intelligence" target="_blank" rel="noopener">drummondcarpenter.com/data-intelligence ↗</a>
+        <div class="btns">
+          <a class="btn btn-navy" href="mailto:cdrummond@drummondcarpenter.com?subject=Massey%20working%20session">Set up the hour</a>
+          <a class="btn btn-line" href="Drummond-Carpenter-Massey-One-Pager.pdf" download>One-pager ↓</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Every name, address and number on this page comes from synthetic sample data. No Massey data was used.</span>
+    <span>© 2026 Drummond Carpenter · Cool people, cool projects.</span>
+  </div>
+</footer>
+
+<script>
+(()=>{'use strict';
+/* Fill this in to show the revenue range in the header band and the facts table, e.g. '$10M–$25M'. */
+const REVENUE='';
+
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const clamp=(v,a=0,b=1)=>v<a?a:v>b?b:v,lerp=(a,b,t)=>a+(b-a)*t,seg=(q,a,b)=>clamp((q-a)/(b-a));
+const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2,eOut=t=>1-Math.pow(1-t,3),eIn=t=>t*t;
+const fmt=n=>Math.round(n).toLocaleString('en-US'),TAU=Math.PI*2,rnd=(a,b)=>b===undefined?Math.random()*a:a+Math.random()*(b-a);
+const DPR=Math.min(2,window.devicePixelRatio||1);
+const root=document.documentElement;
+let motion=!matchMedia('(prefers-reduced-motion: reduce)').matches;
+function fit(c){const r=c.getBoundingClientRect();c.width=Math.max(1,Math.round(r.width*DPR));c.height=Math.max(1,Math.round(r.height*DPR));const x=c.getContext('2d');x.setTransform(DPR,0,0,DPR,0,0);return[x,r.width,r.height]}
+function prog(el){const r=el.getBoundingClientRect(),t=r.height-innerHeight;return t<=0?1:clamp(-r.top/t)}
+function watch(el,cb,th=0){const io=new IntersectionObserver(es=>es.forEach(e=>cb(e.isIntersecting)),{threshold:th});io.observe(el);return io}
+function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
+
+if(REVENUE){$$('.rev').forEach(e=>e.textContent=REVENUE);$('#rev-gl').hidden=false;$('#rev-row').hidden=false}
+
+/* gradient noise for the flow field */
+const PERM=new Uint8Array(512);{const p=shuffle([...Array(256).keys()]);for(let i=0;i<512;i++)PERM[i]=p[i&255]}
+function gr(h,x,y){switch(h&3){case 0:return x+y;case 1:return -x+y;case 2:return x-y;default:return -x-y}}
+function noise(x,y){const fx=Math.floor(x),fy=Math.floor(y),X=fx&255,Y=fy&255;x-=fx;y-=fy;const u=x*x*(3-2*x),v=y*y*(3-2*y),a=PERM[X]+Y,b=PERM[X+1]+Y;
+  return lerp(lerp(gr(PERM[a],x,y),gr(PERM[b],x-1,y),u),lerp(gr(PERM[a+1],x,y-1),gr(PERM[b+1],x-1,y-1),u),v)}
+function curl(x,y){const e=.08,a=(noise(x,y+e)-noise(x,y-e))/(2*e),b=(noise(x+e,y)-noise(x-e,y))/(2*e);return[a,-b]}
+
+class Sparks{
+  constructor(){this.a=[]}
+  burst(x,y,n,cols,speed=5,o={}){for(let i=0;i<n;i++){const an=rnd(TAU),s=speed*rnd(.3,1.3);this.a.push({x,y,vx:Math.cos(an)*s+(o.vx||0),vy:Math.sin(an)*s-(o.up||0),l:1,dc:rnd(.012,.03)*(o.slow||1),sz:o.size?o.size*rnd(.5,1.2):rnd(1.4,3.4),c:cols[i%cols.length],g:o.g??.08,sh:!!o.shard,r:rnd(TAU),vr:rnd(-.25,.25)})}}
+  step(ctx){const a=this.a;for(let i=a.length-1;i>=0;i--){const p=a[i];p.x+=p.vx;p.y+=p.vy;p.vy+=p.g;p.vx*=.975;p.vy*=.985;p.l-=p.dc;p.r+=p.vr;if(p.l<=0){a.splice(i,1);continue}
+    ctx.globalAlpha=p.l;ctx.fillStyle=p.c;
+    if(p.sh){ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.r);ctx.fillRect(-p.sz/2,-p.sz/4,p.sz,p.sz/2);ctx.restore()}
+    else{ctx.beginPath();ctx.arc(p.x,p.y,p.sz*p.l+.3,0,TAU);ctx.fill()}}
+    ctx.globalAlpha=1}
+}
+function drawMosq(ctx,x,y,a,s,ph,col,al){
+  ctx.save();ctx.translate(x,y);ctx.rotate(a);ctx.scale(s,s);ctx.globalAlpha=al;
+  const f=Math.sin(ph*2.3)*.5+.5;
+  ctx.fillStyle=`rgba(225,240,236,${.14+.3*f})`;
+  ctx.beginPath();ctx.ellipse(-1.5,-3.5-2*f,5.5,1.9,-.55,0,TAU);ctx.fill();
+  ctx.beginPath();ctx.ellipse(-1.5,3.5+2*f,5.5,1.9,.55,0,TAU);ctx.fill();
+  ctx.strokeStyle=col;ctx.lineWidth=.6;ctx.beginPath();
+  for(const k of[-1,1]){ctx.moveTo(1,0);ctx.lineTo(3,k*4);ctx.lineTo(1,k*9);ctx.moveTo(0,0);ctx.lineTo(-3,k*5);ctx.lineTo(-9,k*6);ctx.moveTo(-1,0);ctx.lineTo(-5,k*4);ctx.lineTo(-12,k*4.5)}
+  ctx.stroke();ctx.lineCap='round';ctx.lineWidth=2.1;ctx.beginPath();ctx.moveTo(-10,0);ctx.lineTo(1.5,0);ctx.stroke();
+  ctx.fillStyle=col;ctx.beginPath();ctx.arc(3.4,0,1.7,0,TAU);ctx.fill();
+  ctx.lineWidth=.55;ctx.beginPath();ctx.moveTo(4.5,0);ctx.lineTo(10,.4);ctx.stroke();
+  ctx.restore();ctx.globalAlpha=1}
+function Mosq(x,y){return{x,y,vx:0,vy:0,tx:x,ty:y,tt:0,a:rnd(TAU),ph:rnd(100)}}
+function fly(m,b,force=.35,jit=1.1){if(--m.tt<=0){m.tx=b.x+rnd(b.w);m.ty=b.y+rnd(b.h);m.tt=rnd(25,85)}
+  const dx=m.tx-m.x,dy=m.ty-m.y,d=Math.hypot(dx,dy)||1;m.vx+=dx/d*force+(Math.random()-.5)*jit;m.vy+=dy/d*force+(Math.random()-.5)*jit;m.vx*=.9;m.vy*=.9;m.x+=m.vx;m.y+=m.vy;
+  if(Math.hypot(m.vx,m.vy)>.4){let da=Math.atan2(m.vy,m.vx)-m.a;da=Math.atan2(Math.sin(da),Math.cos(da));m.a+=da*.25}m.ph++}
+
+/* nav, progress bar, motion toggle, reveals */
+const nav=$('#nav'),bar=$('#bar');
+function onScroll(){nav.classList.toggle('solid',scrollY>40);const h=root.scrollHeight-innerHeight;bar.style.transform=`scaleX(${h>0?scrollY/h:0})`}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+const mb=$('#motion');
+function setMotion(on){motion=on;root.classList.toggle('still',!on);mb.setAttribute('aria-pressed',String(!on));mb.textContent=on?'Motion on':'Motion off';document.dispatchEvent(new Event('motionchange'))}
+mb.addEventListener('click',()=>setMotion(!motion));
+root.classList.toggle('still',!motion);mb.textContent=motion?'Motion on':'Motion off';
+const rio=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rio.unobserve(e.target)}}),{threshold:.12});
+$$('.reveal').forEach(el=>rio.observe(el));
+
+/* ================= HERO: a flowing swarm that settles into a list ================= */
+(function(){
+  const sec=$('#hero'),c=$('#swarm'),msy=$('#messy'),cln=$('#clean-h'),num=$('#hero-n'),lab=$('#hero-l'),cue=$('#cue');
+  const txt=msy.textContent;msy.textContent='';const letters=[];
+  txt.split(' ').forEach((wd,i)=>{if(i){const g=document.createElement('span');g.className='sp';msy.appendChild(g)}const w=document.createElement('span');w.className='w';[...wd].forEach(ch=>{const s=document.createElement('span');s.textContent=ch;w.appendChild(s);letters.push(s)});msy.appendChild(w)});
+  const COLS=['rgba(189,237,214,.85)','rgba(18,161,152,.95)','rgba(200,225,255,.55)','rgba(215,247,117,.9)','rgba(255,90,76,.95)'];
+  const LABELS=['sample customer records across 9 spreadsheets','records left as the rules run','households ready for a fall termite mailer'];
+  let ctx,W,H,P=[],M=[],tb,rings=[],sp=new Sparks(),vis=true,last=-1,fr=0,mouse={x:-9999,y:-9999},ww=0,wh=0,stillDrawn=false,phase=-1,T=0;
+  function build(){
+    [ctx,W,H]=fit(c);ww=innerWidth;wh=innerHeight;stillDrawn=false;const mob=W<760;
+    const N=Math.round(clamp(W*H/900,420,1600)),nb=Math.round(N*.11),ng=N-nb;
+    if(mob){const ab=$('.hero-actions').getBoundingClientRect().bottom-c.getBoundingClientRect().top,y=Math.max(H*.55,ab+44);tb={x:16,y,w:W-32,h:Math.max(60,H-y-18)}}
+    else{tb={w:Math.min(W*(W<1150?.34:.38),620),y:H*.2,h:H*.62};tb.x=W-tb.w-Math.max(28,W*.05)}
+    const cw=mob?16:22,cols=Math.max(8,Math.floor(tb.w/cw)),rows=Math.ceil(ng/cols),rh=Math.min(11,tb.h/rows);
+    tb.h=rows*rh;tb.rh=rh;tb.cw=tb.w/cols;
+    const order=shuffle([...Array(ng).keys()]),ox=mob?W*.5:W*.66,oy=H*(mob?.7:.5);P=[];
+    for(let i=0;i<N;i++){const bad=i<nb,an=rnd(TAU),s=rnd(4,20);let tx=0,ty=0,d=Math.random();
+      if(!bad){const k=order[i-nb],r=Math.floor(k/cols),ci=k%cols;tx=tb.x+ci*tb.cw+tb.cw/2;ty=tb.y+r*rh+rh/2;d=(r/rows)*.8+Math.random()*.2}
+      P.push({x:ox+rnd(-4,4),y:oy+rnd(-4,4),vx:Math.cos(an)*s,vy:Math.sin(an)*s,len:rnd(6,16),col:bad?4:(Math.random()<.1?3:i%3),bad,tx,ty,tw:Math.max(4,tb.cw-5),d,a:an,pop:false,spd:rnd(.7,1.3)})}
+    M=[];const nm=mob?7:14;
+    for(let i=0;i<nm;i++){const m=Mosq(Math.random()<.5?-40:W+40,rnd(H*.1,H*.9));m.zap=.14+i*(.34/nm);m.dead=false;M.push(m)}
+    ctx.clearRect(0,0,W,H)}
+  function tick(){
+    requestAnimationFrame(tick);
+    if(!vis)return;if(!motion&&stillDrawn)return;
+    fr++;T+=.0022;const s=motion?prog(sec):1,mob=W<760;
+    ctx.globalCompositeOperation='destination-out';ctx.fillStyle=`rgba(0,0,0,${motion?.24:1})`;ctx.fillRect(0,0,W,H);ctx.globalCompositeOperation='source-over';
+    const mv=[[],[],[],[],[]],dn=[[],[],[],[]];const cx=mob?W*.5:W*.64,cy=mob?H*.66:H*.5;
+    for(const p of P){
+      if(motion){const[fx,fy]=curl(p.x*.0024+T,p.y*.0024-T*.6),sp2=2.4*p.spd;
+        p.vx=lerp(p.vx,fx*sp2,.07);p.vy=lerp(p.vy,fy*sp2,.07);
+        p.vx+=(cx-p.x)*.00018;p.vy+=(cy-p.y)*.00022;
+        const dx=p.x-mouse.x,dy=p.y-mouse.y,d2=dx*dx+dy*dy;if(d2<22500){const d=Math.sqrt(d2)||1,f=(150-d)/150*2.6;p.vx+=dx/d*f-dy/d*f*.6;p.vy+=dy/d*f+dx/d*f*.6}
+        p.x+=p.vx;p.y+=p.vy;if(p.vx*p.vx+p.vy*p.vy>.05)p.a=Math.atan2(p.vy,p.vx)}
+      if(p.bad){const at=.12+p.d*.5;
+        if(s>=at){if(!p.pop){p.pop=true;if(motion&&last>=0&&last<at)sp.burst(p.x,p.y,9,['#ff5a4c','#ffb84d','#ff8a70'],4.2)}continue}
+        p.pop=false;mv[4].push(p.x,p.y,p.a,p.len);continue}
+      const st=.1+p.d*.42,t=motion?ease(seg(s,st,st+.16)):1;
+      if(t>=1){dn[p.col].push(p.tx,p.ty,p.tw);continue}
+      let da=-p.a;da=Math.atan2(Math.sin(da),Math.cos(da));
+      mv[p.col].push(lerp(p.x,p.tx,t),lerp(p.y,p.ty,t),p.a+da*t,lerp(p.len,p.tw,t));
+    }
+    ctx.globalCompositeOperation='lighter';ctx.lineCap='round';ctx.lineWidth=2;
+    for(let k=0;k<5;k++){const a=mv[k];if(!a.length)continue;ctx.strokeStyle=COLS[k];ctx.beginPath();
+      for(let i=0;i<a.length;i+=4){const hx=Math.cos(a[i+2])*a[i+3]/2,hy=Math.sin(a[i+2])*a[i+3]/2;ctx.moveTo(a[i]-hx,a[i+1]-hy);ctx.lineTo(a[i]+hx,a[i+1]+hy)}ctx.stroke()}
+    ctx.globalCompositeOperation='source-over';
+    ctx.lineCap='butt';ctx.lineWidth=Math.max(3,tb.rh*.52);
+    for(let k=0;k<4;k++){const a=dn[k];if(!a.length)continue;ctx.strokeStyle=COLS[k];ctx.beginPath();
+      for(let i=0;i<a.length;i+=3){ctx.moveTo(a[i]-a[i+2]/2,a[i+1]);ctx.lineTo(a[i]+a[i+2]/2,a[i+1])}ctx.stroke()}
+    const sl=motion?seg(s,.6,.9):1;
+    if(sl>0&&sl<1){const y=tb.y+sl*tb.h,g=ctx.createLinearGradient(0,y-46,0,y);g.addColorStop(0,'rgba(215,247,117,0)');g.addColorStop(1,'rgba(215,247,117,.18)');ctx.fillStyle=g;ctx.fillRect(tb.x-12,y-46,tb.w+24,46);ctx.fillStyle='#d7f775';ctx.fillRect(tb.x-12,y-1,tb.w+24,2)}
+    const la=motion?seg(s,.72,.86):1;
+    if(la>0){ctx.globalAlpha=la;ctx.fillStyle='#d7f775';ctx.font='600 11px "IBM Plex Mono", monospace';ctx.fillText('MAIL-READY LIST · ONE ROW PER HOUSEHOLD',tb.x,tb.y-16);ctx.globalAlpha=1}
+    const bb={x:-20,y:50,w:W+40,h:H-100};
+    for(const m of M){
+      if(s>=m.zap){if(!m.dead){m.dead=true;if(motion&&last>=0&&last<m.zap){sp.burst(m.x,m.y,30,['#d7f775','#ffffff','#bdedd6'],6.5,{g:.03});rings.push({x:m.x,y:m.y,r:3,l:1})}}continue}
+      m.dead=false;if(motion)fly(m,bb,.3,1.3);drawMosq(ctx,m.x,m.y,m.a,1.55,m.ph,'#e3efe9',.95)}
+    for(let i=rings.length-1;i>=0;i--){const r=rings[i];r.r+=3.6;r.l-=.035;if(r.l<=0){rings.splice(i,1);continue}ctx.strokeStyle=`rgba(215,247,117,${r.l})`;ctx.lineWidth=2;ctx.beginPath();ctx.arc(r.x,r.y,r.r,0,TAU);ctx.stroke()}
+    sp.step(ctx);last=s;
+    const A=motion?(1-seg(s,.02,.45))*3.2:0;
+    if(fr%3===0)for(const l of letters)l.style.transform=A>.05?`translate(${(Math.random()-.5)*A}px,${(Math.random()-.5)*A}px) rotate(${(Math.random()-.5)*A*1.8}deg)`:'';
+    const r=motion?ease(seg(s,.3,.58)):1;cln.style.clipPath=`inset(-10% ${(1-r)*100}% -25% 0)`;cln.style.opacity=.25+r*.75;
+    msy.style.opacity=1-.45*(motion?seg(s,.35,.7):1);
+    num.textContent=fmt(s<.24?48539:lerp(48539,6987,ease(seg(s,.24,.82))));
+    const ph=s<.24?0:s<.82?1:2;if(ph!==phase){phase=ph;lab.textContent=LABELS[ph]}
+    cue.style.opacity=1-seg(s,.02,.08);
+    if(!motion)stillDrawn=true}
+  sec.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top});
+  sec.addEventListener('pointerleave',()=>{mouse.x=mouse.y=-9999});
+  watch(sec,v=>vis=v);
+  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{if(Math.abs(innerWidth-ww)>40||Math.abs(innerHeight-wh)>160)build();else{[ctx,W,H]=fit(c);stillDrawn=false}},180)});
+  document.addEventListener('motionchange',()=>{stillDrawn=false;if(motion)build()});
+  build();requestAnimationFrame(tick);
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(()=>{if(W<760)build()});
+})();
+
+/* ================= WATCH IT CLEAN ================= */
+(function(){
+  const SC={Pest:'#f3b060',Termite:'#ff8a7c',Lawn:'#8fd17f',Irrigation:'#6fb3ea',Mosquito:'#c3a6ff',Acquired:'#cfd8dc'};
+  const HC={C:'#12a198',D:'#6fb3ea',F:'#c3a6ff',G:'#f3b060',J:'#8fd17f'};
+  // Each row as exported, then its standardized value. hh = household; p = the row that stands for the household.
+  const R=[
+    {s:'Pest',f:'Brian - DNC',l:'Edwards',a:'1504 Bay Rd',c:'Kissimmee FL',f2:'Brian',a2:'1504 BAY RD',hh:'A',p:1,bad:'f',flag:['r','DNC in first name'],boom:1},
+    {s:'Termite',f:'Frank (Deceased)',l:'Campbell',a:'529 N Eagle Ridge Dr',c:'Fort Myers FL',f2:'Frank',a2:'529 N EAGLE RIDGE DR',hh:'B',p:1,bad:'f',flag:['r','Deceased in first name'],boom:1},
+    {s:'Pest',f:'MARIA',l:'BRYANT',a:'1774 PRIMROSE LN',c:'Orlando FL',f2:'Maria',l2:'Bryant',hh:'C',p:1,warn:'fl',flag:['a','All caps']},
+    {s:'Lawn',f:'Maria',l:'Bryant',a:'1774 Primrose Ln',c:'Orlando FL',a2:'1774 PRIMROSE LN',hh:'C'},
+    {s:'Irrigation',f:'Maria',l:'Bryant',a:'1774 Primrose Ln',c:'Orlando FL',a2:'1774 PRIMROSE LN',hh:'C'},
+    {s:'Pest',f:'Kenneth/Jennifer',l:'Cole',a:'515 Country Club Blvd.',c:'Orlando FL',f2:'Kenneth & Jennifer',a2:'515 COUNTRY CLUB BLVD',hh:'D',p:1,warn:'f',flag:['a','Slash in name']},
+    {s:'Mosquito',f:'Kenneth',l:'Cole',a:'515 Country Club Boulevard',c:'Orlando FL',a2:'515 COUNTRY CLUB BLVD',hh:'D',warn:'a',flag:['a','"Boulevard" spelled out']},
+    {s:'Lawn',f:'HELEN AND CHRISTOPHER',l:'MARSHALL',a:'1431 ORANGE CIR',c:'Fort Myers FL',f2:'Helen & Christopher',l2:'Marshall',hh:'E',p:1,warn:'fl',flag:['a','"AND" + all caps']},
+    {s:'Pest',f:'Hector',l:'Watson',a:'1818 Wellington Terrace',c:'Kissimmee FL',a2:'1818 WELLINGTON TER',hh:'F',p:1,show:'Hector & Andrea'},
+    {s:'Lawn',f:'Hector &Andrea',l:'Watson',a:'1818 Wellington Terrace',c:'Kissimmee FL',f2:'Hector & Andrea',a2:'1818 WELLINGTON TER',hh:'F',warn:'f',flag:['a','"&" typed oddly']},
+    {s:'Irrigation',f:'Donna',l:'Nelson',a:'1071 W WHISPER WOOD WAY',c:'Melbourne FL',hh:'G',p:1},
+    {s:'Lawn',f:'Donna',l:'Nelson',a:'1071 W Whisper Wood Way',c:'Melbourne FL',a2:'1071 W WHISPER WOOD WAY',hh:'G'},
+    {s:'Pest',f:'Donna',l:'Nelson',a:'1071 West Whisper Wood Way',c:'Melbourne FL',a2:'1071 W WHISPER WOOD WAY',hh:'G',warn:'a',flag:['a','"West" spelled out']},
+    {s:'Termite',f:'Donna',l:'Nelson',a:'1071 W Whiper Wood Way',c:'Melbourne FL',a2:'1071 W WHISPER WOOD WAY',hh:'G',warn:'a',flag:['a','Street misspelled']},
+    {s:'Pest',f:'Theresa',l:'Gonzales',a:'1027 Heron Ter',c:'Sarasota FL',a2:'1027 HERON TER',hh:'H',p:1},
+    {s:'Pest',f:'William',l:'Fernandez',a:'1027 Heron Ter',c:'Atlanta GA',a2:'1027 HERON TER',hh:'I',p:1},
+    {s:'Acquired',f:'KING, KELLY',l:'',a:'398 BAY PARKWAY',c:'OCALA',f2:'Kelly',l2:'King',a2:'398 BAY PKWY',c2:'Ocala FL',hh:'K',p:1,bad:'f',flag:['r','Notes: "no mail/no marketing"']},
+    {s:'Lawn',f:'Pamela',l:'Davis',a:'9430 Egret Ter',c:'Ocala FL',a2:'9430 EGRET TER',hh:'J',p:1},
+    {s:'Pest',f:'Pamela',l:'Davis',a:'9430 Egret Ter',c:'Ocala FL',a2:'9430 EGRET TER',hh:'J',flag:['a','Same account in 2 files']},
+  ];
+  const HH={
+    A:{st3:[['r','DNC in first name']],out:[5,'Brian Edwards','Do not contact: "DNC" typed in the first name']},
+    B:{st3:[['r','Deceased in first name']],out:[4,'Frank Campbell','Deceased, in the name field. Already a termite customer.']},
+    C:{n:3,st3:[['g','3 accounts, 1 home']],st4:[['g','Parcel: single family, 1992']],fin:[['l','Tier A'],['g','3 referrals, new customer']]},
+    D:{n:2,st3:[['g','2 accounts, 1 home']],st4:[['r','Parcel: townhouse, not a house']],out:[8,'Kenneth & Jennifer Cole','Townhouse per county parcel FL-32828-0017704']},
+    E:{st3:[],st4:[['b','Termite offer sent Aug 12']],out:[9,'Helen & Christopher Marshall','Got a termite offer on Aug 12']},
+    F:{n:2,st3:[['g','2 accounts, 1 home']],st4:[['b','Lead L-55417: termite quote open']],out:[7,'Hector & Andrea Watson','Sales is quoting termite (lead L-55417)']},
+    G:{n:4,st3:[['g','4 accounts, 1 home, typo matched']],st4:[['b','Has termite: acct 1040235']],out:[6,'Donna Nelson','Already has termite on acct 1040235']},
+    H:{st3:[['b','Same street, other city: kept apart']],out:[2,'Theresa Gonzales','Cancelled account']},
+    I:{st3:[['b','Same street, other city: kept apart']],out:[1,'William Fernandez','Outside Florida (Atlanta, GA)']},
+    K:{st3:[['r','Notes: "no mail"']],out:[5,'Kelly King','Asked for no mail, in the acquired company\'s notes']},
+    J:{n:2,st3:[['g','Same account, 1 piece']],st4:[['g','Parcel: single family, 2000']],fin:[['l','Tier A'],['g','Responded to a recent offer']]},
+  };
+  const TITLES=['Sunday export · 19 rows from 6 files','Sunday export · 19 rows from 6 files','Standardized · 19 rows','11 households','11 households','Fall termite mailer · rules applied','Mail-ready list · 2 households'];
+  const sec=$('#clean'),rowsEl=$('#rows'),sheet=$('#sheet'),body=$('#cl-body'),fxc=$('#cl-fx'),ledger=$('#ledger'),caps=$$('#cl-cap>div'),progEls=$$('#cl-prog li'),stamp=$('#cl-stamp');
+  const sp=new Sparks();let fx,FW,FH,running=false,cur=-1,gen=0,rh=28;
+  const els=R.map(()=>{const d=document.createElement('div');d.className='row';
+    d.innerHTML='<span class="c-src"><span class="src"></span></span><span class="cell f"></span><span class="cell l c-last"></span><span class="cell a"></span><span class="cell c c-city"></span><span class="chips"></span>';
+    rowsEl.appendChild(d);const q=k=>d.querySelector(k);
+    return{d,src:q('.src'),f:q('.f'),l:q('.l'),a:q('.a'),c:q('.c'),chips:q('.chips')}});
+  const removedOrder=Object.entries(HH).filter(([,h])=>h.out).sort((a,b)=>a[1].out[0]-b[1].out[0]).map(([k])=>k);
+  const repOf={};R.forEach((r,i)=>{if(r.p)repOf[r.hh]=i});
+  function sizeFx(){[fx,FW,FH]=fit(fxc)}
+  function loop(){fx.clearRect(0,0,FW,FH);sp.step(fx);if(sp.a.length)requestAnimationFrame(loop);else{fx.clearRect(0,0,FW,FH);running=false}}
+  function kick(){if(!running){running=true;requestAnimationFrame(loop)}}
+  function burstEl(el,n,cols,o){if(!motion)return;const r=el.getBoundingClientRect(),s=fxc.getBoundingClientRect();for(let i=0;i<n;i++)sp.burst(r.left-s.left+rnd(r.width),r.top-s.top+rnd(r.height),1,cols,o.speed||3,o);kick()}
+  const CH='ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789&/.';
+  function scramble(el,to){const from=el.textContent;if(from===to)return;if(!motion){el.textContent=to;return}
+    const g=gen,len=Math.max(from.length,to.length),t0=performance.now(),dur=520+Math.random()*260;
+    (function f(now){if(g!==gen){return}const t=clamp((now-t0)/dur),k=Math.floor(t*len);let s='';
+      for(let i=0;i<len;i++){if(i<k)s+=to[i]||'';else if(i<to.length)s+=to[i]===' '?' ':CH[Math.floor(Math.random()*CH.length)]}
+      el.textContent=s;if(t<1)requestAnimationFrame(f);else el.textContent=to})(t0)}
+  const chip=(k,t)=>`<span class="chip ${k}">${t}</span>`;
+  function isVis(i,step){const r=R[i];if(step<3)return true;if(!r.p)return false;if(step>=5&&HH[r.hh].out)return false;return true}
+  function visList(step){return R.map((r,i)=>i).filter(i=>isVis(i,step))}
+  function setRh(){rh=clamp(Math.floor(rowsEl.clientHeight/19),22,32);rowsEl.style.setProperty('--rh',rh+'px')}
+  function place(i,y,op,dx=0){const e=els[i].d;e.style.transform=`translate(${dx}px,${y}px)`;e.style.opacity=op}
+  function textsFor(i,step){const r=R[i],std=step>=2;
+    let f=std&&r.f2!==undefined?r.f2:r.f,l=std&&r.l2!==undefined?r.l2:r.l,a=std&&r.a2!==undefined?r.a2:r.a,c=std&&r.c2!==undefined?r.c2:r.c,s=r.s;
+    if(step>=3&&r.p){const hh=HH[r.hh];if(r.show)f=r.show;if(hh.n)s=hh.n+' accts'}
+    return{f,l,a,c,s}}
+  function chipsFor(i,step){const r=R[i],hh=HH[r.hh];
+    if(step===0)return'';
+    if(step<=2){if(!r.flag)return'';const[k,t]=r.flag;return step===2&&k==='a'?chip('g','Fixed'):chip(k,t)}
+    if(!r.p)return'';
+    let cs=[...(hh.st3||[])];if(step>=4&&hh.st4)cs=[...hh.st4,...cs.filter(x=>x[0]==='r')];
+    if(step>=6&&hh.fin)cs=hh.fin;
+    return cs.map(([k,t])=>chip(k,t)).join('')}
+  function cellClasses(i,step){const r=R[i],e=els[i];
+    for(const k of['f','l','a'])e[k].classList.remove('bad','warn','ok');
+    if(step===1){if(r.bad)e[r.bad].classList.add('bad');if(r.warn)for(const k of r.warn)e[k].classList.add('warn')}
+    if(step===2){if(r.bad)e[r.bad].classList.add('ok');if(r.warn)for(const k of r.warn)e[k].classList.add('ok');if(r.a2&&!(r.warn||'').includes('a'))e.a.classList.add('ok')}}
+  function addLedger(k){const o=HH[k].out,li=document.createElement('li'),b=document.createElement('b'),s=document.createElement('span');b.textContent=o[1];s.textContent='Rule '+o[0]+' · '+o[2];li.append(b,s);ledger.appendChild(li);ledger.scrollTop=ledger.scrollHeight}
+  function emptyLedger(){ledger.innerHTML='<li class="empty">Nothing removed yet.</li>'}
+  function apply(step,anim){
+    gen++;const g=gen,prev=cur;cur=step;anim=anim&&motion;
+    caps.forEach((e,i)=>e.classList.toggle('on',i===step));
+    progEls.forEach((e,i)=>{e.classList.toggle('on',i===step);e.classList.toggle('done',i<step)});
+    $('#sh-title').textContent=TITLES[step];sheet.classList.toggle('done',step===6);
+    $('#fixq').classList.toggle('on',step===6);$('#fixn').textContent=step===6?'18':'0';
+    $('#mcount').textContent='Removed '+(step>=5?removedOrder.length:0);
+    stamp.classList.toggle('on',step===6);
+    if(anim&&step===6)setTimeout(()=>{if(g!==gen)return;body.classList.remove('thud');void body.offsetWidth;body.classList.add('thud')},260);
+    setRh();
+    R.forEach((r,i)=>{const t=textsFor(i,step),e=els[i];
+      if(anim&&prev===1&&step===2&&r.boom)burstEl(e.f,46,['#ff5a4c','#ff8a70','#ffb84d'],{speed:3.2,g:.1});
+      for(const k of['f','l','a','c']){if(anim&&step===2)scramble(e[k],t[k]);else e[k].textContent=t[k]}
+      e.src.textContent=t.s;e.src.style.setProperty('--sc',SC[r.s]);
+      cellClasses(i,step);e.chips.innerHTML=chipsFor(i,step);
+      e.d.classList.toggle('hh',step>=3&&step<6&&!!HC[r.hh]&&!!r.p);e.d.style.setProperty('--hc',HC[r.hh]||'transparent');
+      e.d.classList.toggle('ready',step===6&&!!r.p&&!HH[r.hh].out);
+      e.d.classList.remove('gone')});
+    const vis=visList(step);
+    if(anim&&step===3&&prev===2){
+      // slide every extra account into its household's first row, then close the gaps
+      R.forEach((r,i)=>place(i,repOf[r.hh]*rh,r.p?1:0));
+      setTimeout(()=>{if(g!==gen)return;Object.keys(HC).forEach(k=>burstEl(els[repOf[k]].d,14,[HC[k],'#ffffff'],{speed:1.6,g:0}));vis.forEach((i,k)=>place(i,k*rh,1));
+        R.forEach((r,i)=>{if(!r.p)place(i,vis.indexOf(repOf[r.hh])*rh,0)})},600);
+      emptyLedger();return}
+    if(anim&&step===5&&prev===4){
+      const before=visList(4);before.forEach((i,k)=>place(i,k*rh,1));ledger.innerHTML='';
+      R.forEach((r,i)=>{if(!r.p)place(i,before.indexOf(repOf[r.hh])*rh,0)});
+      removedOrder.forEach((key,n)=>setTimeout(()=>{if(g!==gen)return;const i=repOf[key],e=els[i];
+        burstEl(e.d,80,['#ff5a4c','#ff8a70','#ffffff','#cfd8dc'],{speed:2.2,g:-.015,vx:2.4,shard:true,size:4,slow:.8});
+        e.d.classList.add('gone');place(i,before.indexOf(i)*rh,0,90);addLedger(key)},180+n*200));
+      setTimeout(()=>{if(g!==gen)return;vis.forEach((i,k)=>place(i,k*rh,1))},180+removedOrder.length*200+300);
+      return}
+    // static layout for this step
+    if(step>=5){ledger.innerHTML='';removedOrder.forEach(addLedger)}else emptyLedger();
+    R.forEach((r,i)=>{const k=vis.indexOf(i);
+      if(k>=0){place(i,k*rh,1);return}
+      if(step>=5&&r.p&&HH[r.hh].out){els[i].d.classList.add('gone');place(i,0,0,90);return}
+      const rk=vis.indexOf(repOf[r.hh]);place(i,Math.max(0,rk)*rh,0)});
+  }
+  let queued=false;
+  function onScroll(){queued=false;const p=prog(sec),step=Math.min(6,Math.floor(p*7.2));if(step!==cur)apply(step,step===cur+1)}
+  addEventListener('scroll',()=>{if(!queued){queued=true;requestAnimationFrame(onScroll)}},{passive:true});
+  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{sizeFx();const s=cur;cur=-1;apply(Math.max(0,s),false)},150)});
+  sizeFx();apply(0,false);onScroll();
+})();
+
+/* ================= WATERFALL ================= */
+(function(){
+  const WF={
+    termite:{title:'Fall termite offer · direct mail · Florida',start:48539,final:6987,unit:'Households ready to mail',steps:[
+      ['Outside Florida',14182],['Cancelled or suspended account',4445],['Not a pest or lawn customer',8967],['Deceased (name or notes)',223],
+      ['Do not contact / do not mail',1044],['Household already has termite',4367],['Sales is already quoting termite',292],['Condo, apartment or townhouse',5590],
+      ['Termite offer in the last 60 days',1308],['Undeliverable address',32],['Second account, same household',1102]]},
+    mosquito:{title:'Rain-triggered mosquito offer · email · FL, TX, LA, AL',start:48539,final:3545,unit:'Emails ready to send',steps:[
+      ['Outside FL, TX, LA and AL',6144],['Cancelled or suspended account',5458],['Not a pest, lawn or termite customer',3957],['Deceased (name or notes)',344],
+      ['Do not contact / do not email',1620],['Household already has mosquito',2696],['Sales is already quoting mosquito',562],['Home type not eligible',4862],
+      ['Mosquito offer in the last 45 days',3005],['No usable email address',4505],['Not enough rain yet (held)',10388],['Second account or same email',1453]]}};
+  const box=$('#wf'),rowsEl=$('#wf-rows'),c=$('#wf-c'),title=$('#wf-title'),sp=new Sparks();
+  let key='termite',data,rows=[],counts=[],ctx,W,H,g,dots=[],raf=0,played=false,arrived=[],K=1,spawned=0,finalArr=0,lead=0,nFinal=1;
+  function build(){data=WF[key];title.textContent=data.title;rowsEl.innerHTML='';
+    const mk=(cls,n,l,v)=>{const r=document.createElement('div');r.className='wf-row '+cls;r.innerHTML='<span class="n"></span><span class="l"></span><span class="s"></span><span class="c"></span>';r.children[0].textContent=n;r.children[1].textContent=l;r.children[3].textContent=v;rowsEl.appendChild(r);return r};
+    rows=[mk('start','IN','Customer records, 9 files',fmt(data.start))];
+    data.steps.forEach((s,i)=>rows.push(mk(/held/.test(s[0])?'hold':'',String(i+1).padStart(2,'0'),s[0],'−'+fmt(s[1]))));
+    rows.push(mk('final','OUT',data.unit,fmt(data.final)));counts=rows.map(r=>r.children[3]);
+    $$('[data-wf]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.wf===key)))}
+  function measure(){[ctx,W,H]=fit(c);const br=box.getBoundingClientRect(),s0=rows[0].children[2].getBoundingClientRect();
+    g={x0:s0.left-br.left,w:s0.width,ys:rows.map(r=>{const b=r.getBoundingClientRect();return b.top-br.top+b.height/2}),cx:counts.map(e=>{const b=e.getBoundingClientRect();return b.right-br.left-4}),rh:rows[1].getBoundingClientRect().height};
+    let rem=data.start;g.rem=[rem];data.steps.forEach(s=>{rem-=s[1];g.rem.push(rem)});g.rem.push(data.final)}
+  const wAt=i=>Math.max(5,g.w*g.rem[i]/data.start);
+  function bars(fill){const n=rows.length-1;
+    for(let i=0;i<=n;i++){const w=wAt(i),h=i===n?g.rh*.5:g.rh*.4,a=fill==null?1:clamp(fill[i]);if(a<=0)continue;
+      ctx.fillStyle=i===n?`rgba(10,127,123,${.9*a})`:`rgba(10,127,123,${.14*a})`;ctx.fillRect(g.x0+(g.w-w)/2,g.ys[i]-h/2,w,h)}}
+  function still(){cancelAnimationFrame(raf);raf=0;measure();ctx.clearRect(0,0,W,H);bars(null);data.steps.forEach((s,i)=>counts[i+1].textContent='−'+fmt(s[1]));counts[counts.length-1].textContent=fmt(data.final)}
+  function play(){cancelAnimationFrame(raf);if(!motion){still();return}measure();
+    const D=Math.round(clamp(W*H/260,600,1500));K=data.start/D;
+    const pool=[];data.steps.forEach((s,i)=>{for(let j=0,n=Math.round(s[1]/K);j<n;j++)pool.push(i+1)});while(pool.length<D)pool.push(-1);pool.length=D;shuffle(pool);
+    nFinal=Math.max(1,pool.filter(x=>x<0).length);
+    dots=pool.map(st=>({st,u:Math.random(),y:g.ys[0]-rnd(0,10),vy:g.rh*.15*rnd(.85,1.25),s:0,x:0,t:0,ox:0,oy:0}));
+    arrived=new Array(rows.length).fill(0);spawned=0;finalArr=0;lead=g.ys[0];
+    counts.forEach((e,i)=>{if(i>0)e.textContent=i===counts.length-1?'0':'−0'});
+    raf=requestAnimationFrame(step)}
+  function step(){const n=rows.length-1;ctx.clearRect(0,0,W,H);
+    const per=Math.ceil(dots.length/90);for(let i=0;i<per&&spawned<dots.length;i++)dots[spawned++].s=1;
+    for(let i=0;i<spawned;i++)if(dots[i].s===1&&dots[i].y>lead)lead=dots[i].y;
+    bars(g.ys.map((y,i)=>i===n?finalArr/nFinal:seg(lead,y-g.rh,y)));
+    const fall=[],out=[],hold=[];let live=0;
+    for(const d of dots){if(d.s===0){live++;continue}if(d.s>=3)continue;live++;
+      if(d.s===1){d.y+=d.vy;let k=0;while(k<n&&d.y>g.ys[k+1])k++;d.x=g.x0+g.w/2+(d.u-.5)*wAt(Math.min(k,n));
+        if(d.st>0&&d.y>=g.ys[d.st]){d.s=2;d.ox=d.x;d.oy=g.ys[d.st];d.t=0}
+        else if(d.st<0&&d.y>=g.ys[n]){d.s=3;finalArr++;counts[n].textContent=fmt(Math.min(data.final,finalArr*K))}
+        else fall.push(d.x,d.y)}
+      else if(d.s===2){d.t+=.05;const t=eIn(clamp(d.t));d.x=lerp(d.ox,g.cx[d.st],t);d.y=d.oy-Math.sin(t*Math.PI)*12;
+        const held=/held/.test(data.steps[d.st-1][0]);
+        if(d.t>=1){d.s=4;arrived[d.st]++;const e=counts[d.st];e.textContent='−'+fmt(Math.min(data.steps[d.st-1][1],arrived[d.st]*K));
+          if(Math.random()<.25){e.classList.remove('bump');void e.offsetWidth;e.classList.add('bump')}
+          if(Math.random()<.2)sp.burst(d.x,d.y,3,[held?'#e89a1c':'#e4574a'],1.6,{g:.02})}
+        else(held?hold:out).push(d.x,d.y)}}
+    const dr=(a,col)=>{ctx.fillStyle=col;for(let i=0;i<a.length;i+=2)ctx.fillRect(a[i]-1.3,a[i+1]-1.3,2.6,2.6)};
+    dr(fall,'#0a7f7b');dr(out,'#e4574a');dr(hold,'#e89a1c');sp.step(ctx);
+    if(live>0||sp.a.length)raf=requestAnimationFrame(step);else still()}
+  $$('[data-wf]').forEach(b=>b.addEventListener('click',()=>{key=b.dataset.wf;build();played=true;play()}));
+  $('#wf-replay').addEventListener('click',()=>{played=true;play()});
+  watch(box,v=>{if(v&&!played){played=true;play()}},.35);
+  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{if(!raf)still()},200)});
+  document.addEventListener('motionchange',()=>{if(!motion)still()});
+  build();requestAnimationFrame(()=>{still();if(motion)counts.forEach((e,i)=>{if(i>0)e.textContent=i===counts.length-1?'0':'−0'})});
+})();
+
+/* ================= ENGINE: data flowing through the three stages ================= */
+(function(){
+  const eng=$('#eng'),c=$('#eng-c'),ins=$$('[data-in]',eng),outs=$$('[data-out]',eng),core=$('#core');
+  let ctx,W,H,paths=[],parts=[],vis=false,raf=0;
+  function bez(p,t){const u=1-t;return[u*u*u*p[0]+3*u*u*t*p[2]+3*u*t*t*p[4]+t*t*t*p[6],u*u*u*p[1]+3*u*u*t*p[3]+3*u*t*t*p[5]+t*t*t*p[7]]}
+  function measure(){[ctx,W,H]=fit(c);const cr=c.getBoundingClientRect(),R=el=>{const r=el.getBoundingClientRect();return{l:r.left-cr.left,r:r.right-cr.left,t:r.top-cr.top,b:r.bottom-cr.top,cx:(r.left+r.right)/2-cr.left,cy:(r.top+r.bottom)/2-cr.top}};
+    const k=R(core),vert=innerWidth<=1000;paths=[];
+    ins.forEach((el,i)=>{const n=R(el),col=el.classList.contains('pub')?'140,196,255':'18,161,152';
+      if(vert){const x0=n.cx,y0=n.b,x1=k.cx+(i-3)*14,y1=k.t;paths.push({p:[x0,y0,x0,y0+(y1-y0)*.5,x1,y1-(y1-y0)*.5,x1,y1],col})}
+      else{const x0=n.r,y0=n.cy,x1=k.l,y1=k.t+(k.b-k.t)*(.2+.6*i/6);paths.push({p:[x0,y0,x0+(x1-x0)*.5,y0,x1-(x1-x0)*.5,y1,x1,y1],col})}});
+    outs.forEach((el,i)=>{const n=R(el);
+      if(vert){const x0=k.cx,y0=k.b,x1=n.cx,y1=n.t;paths.push({p:[x0,y0,x0,y0+(y1-y0)*.5,x1,y1-(y1-y0)*.5,x1,y1],col:'215,247,117',o:1})}
+      else{const x0=k.r,y0=k.cy+(i?40:-40),x1=n.l,y1=n.cy;paths.push({p:[x0,y0,x0+(x1-x0)*.5,y0,x1-(x1-x0)*.5,y1,x1,y1],col:'215,247,117',o:1})}});
+    parts=[];paths.forEach((p,pi)=>{for(let j=0;j<(p.o?22:9);j++)parts.push({pi,t:Math.random(),v:rnd(.003,.007)*(p.o?1.2:1),s:rnd(1.2,2.6)})})}
+  function drawLines(){ctx.lineWidth=1;for(const p of paths){ctx.strokeStyle=`rgba(${p.col},.16)`;ctx.beginPath();ctx.moveTo(p.p[0],p.p[1]);ctx.bezierCurveTo(p.p[2],p.p[3],p.p[4],p.p[5],p.p[6],p.p[7]);ctx.stroke()}}
+  function frame(){if(!vis||!motion){raf=0;return}raf=requestAnimationFrame(frame);
+    ctx.globalCompositeOperation='destination-out';ctx.fillStyle='rgba(0,0,0,.3)';ctx.fillRect(0,0,W,H);ctx.globalCompositeOperation='source-over';
+    drawLines();ctx.globalCompositeOperation='lighter';
+    for(const q of parts){const p=paths[q.pi];q.t+=q.v;if(q.t>1)q.t-=1;const[x,y]=bez(p.p,q.t);
+      ctx.fillStyle=`rgba(${p.col},.9)`;ctx.beginPath();ctx.arc(x,y,q.s,0,TAU);ctx.fill();
+      ctx.fillStyle=`rgba(${p.col},.16)`;ctx.beginPath();ctx.arc(x,y,q.s*3.2,0,TAU);ctx.fill()}
+    ctx.globalCompositeOperation='source-over'}
+  function show(){measure();if(motion){if(!raf)raf=requestAnimationFrame(frame)}else{ctx.clearRect(0,0,W,H);drawLines()}}
+  watch(eng,v=>{vis=v;if(v)show()},.05);
+  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{if(vis)show()},150)});
+  document.addEventListener('motionchange',()=>{if(vis)show()});
+})();
+
+/* ================= MOSQUITO TIMELINE ================= */
+(function(){
+  const c=$('#mq-c');let ctx,W,H,vis=false,raf=0,t0=0,rain=[],mos=[],env=[],rings=[],houses=[],pond,ground;
+  const LOOP=15000,DAYS=14;
+  const EV=[[0,'Heavy rain'],[2,'Model flags the zip'],[3,'Email lands'],[7,'Mosquitoes hatch'],[9,'Calls come in']];
+  function measure(){[ctx,W,H]=fit(c);ground=H*.64;const mob=W<600;
+    pond={x:W*.2,y:ground+8,rx:W*(mob?.15:.12),ry:12};
+    houses=[];const n=mob?4:6,x0=W*(mob?.46:.42),x1=W*.94;for(let i=0;i<n;i++)houses.push({x:x0+(x1-x0)*i/(n-1),w:mob?28:40,lit:0});rain=[];mos=[];env=[];rings=[]}
+  function frame(now){if(!vis){raf=0;return}raf=requestAnimationFrame(frame);if(!t0)t0=now;
+    const d=motion?((now-t0)%LOOP)/LOOP*(DAYS+1.5):11,mob=W<600;
+    ctx.clearRect(0,0,W,H);
+    const wet=d<3?clamp(1-Math.abs(d-1.2)/1.8):0;
+    ctx.fillStyle=`rgba(40,70,100,${.35*wet})`;ctx.fillRect(0,0,W,ground);
+    ctx.filter='blur(7px)';for(const[cx,cy,s]of[[.12,.2,1.2],[.3,.13,.9],[.52,.18,1.1],[.74,.12,.8],[.9,.2,1]]){ctx.fillStyle=`rgba(190,208,226,${.06+.4*wet})`;for(const[ox,oy,r]of[[0,0,34],[34,6,28],[-34,8,26],[14,-16,26],[-12,-10,22]]){ctx.beginPath();ctx.arc(W*cx+ox*s,H*cy+oy*s,r*s*(mob?.7:1),0,TAU);ctx.fill()}}ctx.filter='none';
+    if(motion&&wet>.1)for(let i=0;i<Math.round(16*wet);i++)rain.push({x:rnd(W),y:H*.15+rnd(20),v:rnd(8,12)});
+    ctx.strokeStyle='rgba(175,215,255,.55)';ctx.lineWidth=1.1;ctx.beginPath();
+    for(let i=rain.length-1;i>=0;i--){const r=rain[i];r.y+=r.v;if(r.y>ground){rain.splice(i,1);continue}ctx.moveTo(r.x,r.y);ctx.lineTo(r.x-1.5,r.y-12)}ctx.stroke();
+    {const gg=ctx.createLinearGradient(0,ground,0,H);gg.addColorStop(0,'#10402f');gg.addColorStop(1,'#071c1a');ctx.fillStyle=gg;ctx.fillRect(0,ground,W,H-ground)}
+    const lvl=d<2.5?d/2.5:Math.max(.35,1-(d-2.5)/14);
+    ctx.fillStyle='rgba(60,140,190,.85)';ctx.beginPath();ctx.ellipse(pond.x,pond.y,pond.rx*(.55+.45*lvl),pond.ry*(.6+.5*lvl),0,0,TAU);ctx.fill();
+    ctx.strokeStyle='rgba(143,209,127,.7)';ctx.lineWidth=1.4;ctx.beginPath();
+    for(let i=0;i<16;i++){const x=pond.x-pond.rx*1.15+i*(pond.rx*2.3/15),h=8+((i*7)%9);ctx.moveTo(x,ground+2);ctx.lineTo(x+(i%2?2:-2),ground-h)}ctx.stroke();
+    ctx.fillStyle='#8fb3b0';ctx.font=`600 ${mob?9:10}px "IBM Plex Mono", monospace`;ctx.fillText('POND + WETLAND',pond.x-pond.rx*.8,ground+36);
+    for(const h of houses){const x=h.x-h.w/2,y=ground-h.w*.8;ctx.fillStyle='#1a4466';ctx.fillRect(x,y,h.w,h.w*.8);
+      ctx.fillStyle='#244f73';ctx.beginPath();ctx.moveTo(x-5,y);ctx.lineTo(h.x,y-h.w*.5);ctx.lineTo(x+h.w+5,y);ctx.closePath();ctx.fill();
+      ctx.fillStyle=h.lit>0?`rgba(215,247,117,${.3+.7*h.lit})`:'#0d2a42';ctx.fillRect(x+h.w*.3,y+h.w*.25,h.w*.4,h.w*.3)}
+    if(motion&&d>=2.9&&d<3.2&&env.length===0&&houses[0].lit===0)houses.forEach((h,i)=>env.push({x:W*.05+rnd(W*.25),y:-10-i*16,tx:h.x,ty:ground-h.w*.45,t:0,h}));
+    for(let i=env.length-1;i>=0;i--){const e=env[i];e.t+=.022;const t=eOut(clamp(e.t)),x=lerp(e.x,e.tx,t),y=lerp(e.y,e.ty,t)-Math.sin(t*Math.PI)*40;
+      ctx.fillStyle='#d7f775';ctx.fillRect(x-7,y-5,14,10);ctx.strokeStyle='#061a2b';ctx.lineWidth=1;ctx.beginPath();ctx.moveTo(x-7,y-5);ctx.lineTo(x,y+1);ctx.lineTo(x+7,y-5);ctx.stroke();
+      if(e.t>=1){e.h.lit=1;env.splice(i,1)}}
+    if(d<2.9)houses.forEach(h=>h.lit=0);else if(!motion)houses.forEach(h=>h.lit=1);
+    houses.forEach(h=>{if(h.lit>0)h.lit=Math.max(.35,h.lit-.004)});
+    const target=d<7?0:Math.round(clamp((d-7)/4)*(mob?18:34));
+    while(mos.length<target){mos.push(Mosq(pond.x+rnd(-pond.rx*.6,pond.rx*.6),pond.y))}
+    if(d<7)mos.length=0;
+    const mb={x:pond.x-pond.rx,y:ground-H*.36,w:W*.94-(pond.x-pond.rx),h:H*.3};
+    for(const m of mos){if(motion)fly(m,mb,.28,1.1);drawMosq(ctx,m.x,m.y,m.a,mob?.85:1.05,m.ph,'#eef7cf',.95)}
+    if(motion&&d>9&&d<DAYS&&Math.random()<.06){const h=houses[Math.floor(Math.random()*houses.length)];rings.push({x:h.x,y:ground-h.w*1.45,r:3,l:1})}
+    for(let i=rings.length-1;i>=0;i--){const r=rings[i];r.r+=.9;r.l-=.025;if(r.l<=0){rings.splice(i,1);continue}ctx.strokeStyle=`rgba(215,247,117,${r.l})`;ctx.lineWidth=1.6;ctx.beginPath();ctx.arc(r.x,r.y,r.r,0,TAU);ctx.stroke()}
+    if(d>=2){const tx=mob?'77079 Houston · 6.08 in. · 3.6× normal':'77079 Houston · 6.08 in. of rain in 14 days · 3.6× normal';ctx.font=`600 ${mob?10:12}px "IBM Plex Mono", monospace`;const tw=ctx.measureText(tx).width;
+      ctx.fillStyle='rgba(6,26,43,.85)';ctx.fillRect(14,14,tw+20,28);ctx.strokeStyle='#d7f775';ctx.lineWidth=1;ctx.strokeRect(14.5,14.5,tw+19,27);ctx.fillStyle='#d7f775';ctx.fillText(tx,24,33)}
+    const ty=H-22,tx0=24,tx1=W-44,X=v=>tx0+(tx1-tx0)*v/DAYS;
+    ctx.strokeStyle='rgba(255,255,255,.18)';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(tx0,ty);ctx.lineTo(tx1,ty);ctx.stroke();
+    ctx.font='500 10px "IBM Plex Mono", monospace';
+    for(let i=0;i<=DAYS;i+=2){ctx.fillStyle='rgba(255,255,255,.35)';ctx.fillRect(X(i)-.5,ty-3,1,6);ctx.fillStyle='#6f8c93';ctx.fillText(mob?String(i):'day '+i,X(i)-(mob?3:12),ty+15)}
+    const cd=Math.min(d,DAYS);ctx.strokeStyle='#d7f775';ctx.beginPath();ctx.moveTo(tx0,ty);ctx.lineTo(X(cd),ty);ctx.stroke();
+    ctx.fillStyle='#d7f775';ctx.beginPath();ctx.arc(X(cd),ty,5,0,TAU);ctx.fill();
+    ctx.font=`700 ${mob?10:12}px "Archivo", sans-serif`;
+    EV.forEach(([dd,label],i)=>{const on=d>=dd,x=X(dd),isCur=on&&(i===EV.length-1||d<EV[i+1][0]);if(mob&&!isCur)return;
+      ctx.fillStyle=on?'#d7f775':'rgba(255,255,255,.35)';ctx.beginPath();ctx.arc(x,ty,on?4:3,0,TAU);ctx.fill();
+      const lw=ctx.measureText(label).width,lx=clamp(x-lw/2,8,W-lw-8),ly=ty-14-(mob?0:(i%2)*15);ctx.fillText(label,lx,ly)})}
+  watch(c,v=>{vis=v;if(v&&!raf){measure();raf=requestAnimationFrame(frame)}},.05);
+  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{if(vis)measure()},150)});
+})();
+
+/* ================= RAIN TILES ================= */
+(function(){
+  const RAIN=[["32801","FL",3.21],["32803","FL",2.55],["32806","FL",2.58],["32807","FL",3.02],["32812","FL",2.38],["32817","FL",2.7],["32819","FL",2.7],["32822","FL",2.01],["32825","FL",2.57],["32828","FL",2.95],["32835","FL",2.56],["32837","FL",2.88],["34741","FL",2.95],["34743","FL",2.98],["34744","FL",4.15],["34746","FL",2.35],["32789","FL",.73],["32792","FL",.89],["32771","FL",2.44],["32773","FL",2.47],["32703","FL",2.12],["32712","FL",1.65],["34711","FL",1.43],["34714","FL",1.82],["33602","FL",1.66],["33609","FL",4.17],["33611","FL",4.67],["33618","FL",3.19],["33629","FL",4.14],["33510","FL",2.7],["33511","FL",2.69],["32205","FL",2],["32207","FL",1.6],["32210","FL",1.06],["32216","FL",1.51],["32225","FL",2.57],["32246","FL",1.48],["34231","FL",3.97],["34232","FL",3.8],["34238","FL",3.99],["33907","FL",4.3],["33912","FL",3.35],["33919","FL",3.62],["34470","FL",.68],["34471","FL",2.98],["34476","FL",1.22],["32901","FL",1.49],["32904","FL",1.87],["32935","FL",1.75],["77002","TX",4.57],["77008","TX",5.65],["77019","TX",4.21],["77024","TX",4.34],["77057","TX",5.45],["77079","TX",6.08],["75201","TX",1.53],["75205","TX",.83],["75214","TX",1.79],["75230","TX",2.09],["77449","TX",5.98],["77494","TX",5.25],["75024","TX",1.32],["75093","TX",1.83],["36604","AL",4],["36608","AL",3],["36695","AL",2.48],["70808","LA",4.43],["70810","LA",4.03],["70817","LA",3.55]];
+  const ST=[['FL','Florida'],['TX','Texas'],['LA','Louisiana'],['AL','Alabama']];
+  const wrap=$('#states'),map=$('#rain-map'),c=$('#rain-c'),rng=$('#rt');
+  const mix=r=>{const t=clamp(r/6.1),a=[16,53,84],b=[43,121,194];return`rgb(${a.map((v,i)=>Math.round(lerp(v,b[i],t))).join(',')})`};
+  ST.forEach(([k,name])=>{const zs=RAIN.filter(r=>r[1]===k),d=document.createElement('div');d.className='stt';
+    d.innerHTML=`<h4>${name}</h4><div class="zips">${zs.map(z=>`<div class="z" data-r="${z[2]}" style="--bg:${mix(z[2])}"><b>${z[0]}</b><i>${z[2].toFixed(2)}"</i></div>`).join('')}</div>`;wrap.appendChild(d)});
+  $('#rt-tot').textContent=RAIN.length;
+  let ctx,W,H,tiles=[],cum=[],tot=0,streaks=[],mos=[],vis=false,raf=0,thr=3;
+  function measure(){[ctx,W,H]=fit(c);const mr=map.getBoundingClientRect();
+    tiles=$$('.z',wrap).map(el=>{const r=el.getBoundingClientRect();return{el,x:r.left-mr.left,y:r.top-mr.top,w:r.width,h:r.height,rain:+el.dataset.r}});
+    tot=0;cum=tiles.map(t=>tot+=t.rain*t.rain);streaks=[];setMos()}
+  function setMos(){const on=tiles.filter(t=>t.rain>=thr).slice(0,40);
+    mos=on.map(t=>{let m=mos.find(o=>o.el===t.el);if(!m){m=Mosq(t.x+t.w/2,t.y+t.h);m.el=t.el}m.b={x:t.x-6,y:t.y-12,w:t.w+12,h:t.h+8};return m})}
+  function apply(){thr=+rng.value;$('#rt-v').textContent=thr.toFixed(1)+' in';let n=0;tiles.forEach(t=>{const on=t.rain>=thr;t.el.classList.toggle('on',on);if(on)n++});$('#rt-n').textContent=n;setMos()}
+  function pick(){const r=Math.random()*tot;let lo=0,hi=cum.length-1;while(lo<hi){const m=(lo+hi)>>1;if(cum[m]<r)lo=m+1;else hi=m}return tiles[lo]}
+  function frame(){if(!vis||!motion){raf=0;ctx&&ctx.clearRect(0,0,W,H);return}raf=requestAnimationFrame(frame);ctx.clearRect(0,0,W,H);
+    for(let i=0;i<12;i++){const t=pick();if(t)streaks.push({x:t.x+rnd(t.w),y:t.y-rnd(6,40),e:t.y+t.h-2,v:rnd(5,8),l:rnd(6,11)})}
+    ctx.strokeStyle='rgba(175,215,255,.6)';ctx.lineWidth=1;ctx.beginPath();
+    for(let i=streaks.length-1;i>=0;i--){const s=streaks[i];s.y+=s.v;if(s.y>=s.e){streaks.splice(i,1);continue}ctx.moveTo(s.x,s.y);ctx.lineTo(s.x-1.2,s.y-s.l)}ctx.stroke();
+    for(const m of mos){fly(m,m.b,.25,1);drawMosq(ctx,m.x,m.y,m.a,.7,m.ph,'#eef7cf',.95)}}
+  function start(){if(vis&&motion&&!raf)raf=requestAnimationFrame(frame)}
+  rng.addEventListener('input',apply);
+  watch(map,v=>{vis=v;if(v){measure();apply()}start()},.02);
+  let rt;addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{measure();apply()},200)});
+  document.addEventListener('motionchange',start);
+  measure();apply();
+})();
+
+/* ================= ABOUT: parcels lighting up behind the 100,000+ ================= */
+(function(){
+  const c=$('#dots');let ctx,W,H,cells=[],vis=false,raf=0;
+  function measure(){[ctx,W,H]=fit(c);cells=[];const s=18;for(let y=4;y<H;y+=s)for(let x=4;x<W;x+=s)if(Math.random()<.8)cells.push({x,y,w:s-4+rnd(-3,3),h:s-4+rnd(-3,3),on:0})}
+  function draw(){ctx.clearRect(0,0,W,H);for(const q of cells){if(motion&&Math.random()<.004)q.on=1;q.on=Math.max(0,q.on-.006);
+      ctx.strokeStyle='rgba(143,179,176,.12)';ctx.strokeRect(q.x,q.y,q.w,q.h);
+      if(q.on>0){ctx.fillStyle=`rgba(215,247,117,${q.on*.5})`;ctx.fillRect(q.x,q.y,q.w,q.h)}}}
+  function frame(){if(!vis||!motion){raf=0;return}raf=requestAnimationFrame(frame);draw()}
+  watch(c,v=>{vis=v;if(v){measure();draw();if(motion&&!raf)raf=requestAnimationFrame(frame)}},.05);
+  document.addEventListener('motionchange',()=>{if(vis&&motion&&!raf)raf=requestAnimationFrame(frame)});
+})();
+
+/* ================= COUNTERS ================= */
+$$('[data-count]').forEach(el=>{const to=+el.dataset.count,dec=+(el.dataset.dec||0),set=v=>el.textContent=dec?v.toFixed(dec):fmt(v);
+  if(!motion){set(to);return}set(0);
+  watch(el,v=>{if(!v||el._done)return;el._done=1;const t0=performance.now(),f=now=>{const t=clamp((now-t0)/1500);set(to*eOut(t));if(t<1)requestAnimationFrame(f)};requestAnimationFrame(f)},.6)});
+})();
+</script>
+</body>
+</html>
