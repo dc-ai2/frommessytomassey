@@ -75,6 +75,9 @@ section{scroll-margin-top:72px}
 .hero-copy{position:relative;z-index:2;height:100%;max-width:1400px;margin:0 auto;padding:110px var(--gut) 70px;display:flex;flex-direction:column;justify-content:center;pointer-events:none}
 .hero-copy>*{max-width:610px}
 .hero-copy>.hero-h{max-width:none}
+.prep{align-self:flex-start;display:inline-flex;align-items:center;gap:12px;background:#fff;border-radius:999px;padding:7px 16px 7px 18px;margin:0 0 26px;box-shadow:0 10px 30px rgba(0,0,0,.28)}
+.prep span{font:800 11px var(--font);letter-spacing:.16em;text-transform:uppercase;color:var(--teal);white-space:nowrap}
+.prep img{height:28px;width:auto;display:block}
 .hero-h{font-size:clamp(46px,6.2vw,104px);line-height:.95;letter-spacing:-.035em;font-weight:900;margin:0 0 26px;color:#fff}
 .hero-h .messy{display:block}
 .hero-h .messy .w{display:inline-block;white-space:nowrap}
@@ -440,6 +443,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .hero-copy{justify-content:flex-start;padding-top:104px}
   .hero-shade{background:linear-gradient(180deg,rgba(3,26,55,.94) 0%,rgba(3,26,55,.8) 58%,rgba(3,26,55,0) 74%)}
   .hero-h{font-size:clamp(40px,12vw,56px);margin-bottom:18px}
+  .prep{margin-bottom:18px;padding:6px 14px 6px 15px;gap:10px}
+  .prep span{font-size:10px}
+  .prep img{height:22px}
   .hero-sub{font-size:16px}
   .hero-meter{margin-top:18px}
   .hero-actions{margin-top:18px}
@@ -519,6 +525,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <canvas id="swarm" aria-hidden="true"></canvas>
     <div class="hero-shade"></div>
     <div class="hero-copy">
+      <div class="prep"><span>Prepared for</span><img src="massey-logo.png" alt="Massey Services" width="377" height="120"></div>
       <h1 class="hero-h" aria-label="From messy data to Massey data.">
         <span class="messy" id="messy" aria-hidden="true">From messy data</span>
         <span class="clean" id="clean-h" aria-hidden="true">to Massey data.</span>
