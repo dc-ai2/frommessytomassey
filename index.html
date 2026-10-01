@@ -99,7 +99,7 @@ section{scroll-margin-top:64px}
 .gl span{font-size:14.5px;color:#e6efec;line-height:1.4;display:block}
 
 /* watch it clean */
-#clean{height:640vh;background:linear-gradient(180deg,var(--navy),#071f36 50%,var(--navy))}
+#clean{height:480vh;background:linear-gradient(180deg,var(--navy),#071f36 50%,var(--navy))}
 .cl{position:relative;height:100%;max-width:1440px;margin:0 auto;padding:76px var(--gut) 18px;display:grid;grid-template-rows:auto minmax(0,1fr);gap:14px}
 #cl-fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:9}
 .cl-prog{list-style:none;margin:0 0 12px;padding:0;display:grid;grid-template-columns:repeat(7,1fr);gap:6px;font:500 11px var(--mono);color:#62818a}
@@ -243,7 +243,7 @@ section{scroll-margin-top:64px}
 /* mosquito */
 .mq-scene{position:relative;margin-top:40px;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,#0b2942,#0a2238 60%,#081c2e);border:1px solid rgba(255,255,255,.08)}
 #mq-c{display:block;width:100%;height:clamp(300px,34vw,420px)}
-.mq-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}
+.mq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
 .mq-grid article{background:var(--navy2);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px}
 .mq-grid h3{font:600 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--lime);margin:0 0 8px}
 .mq-grid p,.mq-grid li{font-size:14.5px;color:#c7d8d4;line-height:1.5;margin:0}
@@ -339,7 +339,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   .eng-in{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}
   .eng-in .grp{grid-column:1/-1}
   .how,.outs,.phases{grid-template-columns:1fr}
-  .mq-grid{grid-template-columns:1fr 1fr}
+  .mq-grid{grid-template-columns:1fr}
 }
 @media (max-width:760px){
   .cl{padding:70px 12px 10px;gap:8px}
@@ -424,7 +424,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <div class="hero-meter"><b id="hero-n">48,539</b><span id="hero-l">sample customer records across 9 spreadsheets</span></div>
       <div class="hero-actions">
         <a class="btn btn-lime" href="#clean">Watch it clean ↓</a>
-        <a class="btn btn-ghost" href="Drummond-Carpenter-Massey-One-Pager.pdf" download>One-pager (PDF)</a>
+        <a class="btn btn-ghost" href="#run">Skip to the results</a>
       </div>
     </div>
     <div class="cue" id="cue" aria-hidden="true">Scroll<i></i></div>
@@ -437,8 +437,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="gl"><b>Where</b><span>HQ in Maitland, FL. Offices in FL, MI, PA and TN</span></div>
     <div class="gl"><b>Size</b><span>40+ employees, 10+ in data science and GIS</span></div>
     <div class="gl" id="rev-gl" hidden><b>Revenue</b><span class="rev"></span></div>
-    <div class="gl"><b>Large clients</b><span>DOE, DOD, NASA, VA, EPA. 40+ state and local agencies</span></div>
-    <div class="gl"><b>Security</b><span>Cyber practices for sensitive and controlled federal data</span></div>
+    <div class="gl"><b>Larger clients</b><span>DOE, DOD, NASA, VA, EPA. 40+ state and local agencies</span></div>
+    <div class="gl"><b>Security</b><span>Cybersecurity practices built into federal projects with controlled information</span></div>
     <div class="gl"><b>Track record</b><span>400+ projects, 25+ states, 85% repeat clients</span></div>
   </div>
 </section>
@@ -452,18 +452,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <li>1 Export</li><li>2 Read</li><li>3 Standardize</li><li>4 Households</li><li>5 Parcels + leads</li><li>6 Campaign rules</li><li>7 Mail-ready</li>
         </ol>
         <div class="cl-cap" id="cl-cap">
-          <div><h2>A Sunday export, as it arrives.</h2><p>Nineteen rows from six of the nine files. Same people on more than one list, and the problems TJ showed on stage. These rows come straight from our sample data.</p></div>
-          <div><h2>Read every field, like a person would.</h2><p>"Do not contact" and "Deceased" get typed into name fields and notes, with the checkboxes left blank. TJ's example was "Dear Martha, Deceased." The tool catches the pattern before anything prints.</p></div>
+          <div><h2>A Sunday export, as it arrives.</h2><p>Nineteen rows from five of the nine files, straight from our sample data. The same people show up on more than one list, with the problems TJ showed on stage.</p></div>
+          <div><h2>Read every field, not just the checkboxes.</h2><p>TJ's example was "Dear Shannon, DNC," with all four do-not-market boxes left blank. Then "Dear Martha, Deceased." The tool reads names and notes for the same thing and flags it before anything prints.</p></div>
           <div><h2>Put everything in one format.</h2><p>Joint names come in with a slash, an ampersand or "and." Addresses come in as Street, St. or ST. The tool writes them one way so the same home looks the same on every list.</p></div>
           <div><h2>One household, one row.</h2><p>Accounts at the same address with the same name and phone become one household, even with Donna Nelson's misspelled street. 1027 Heron Ter in Sarasota and 1027 Heron Ter in Atlanta stay two.</p></div>
-          <div><h2>Check the parcel and the lead log.</h2><p>The county parcel settles house versus townhouse. The lead log has no account numbers, so the tool matches it by address and finds Hector Watson's open termite quote.</p></div>
+          <div><h2>Check the parcel and the lead log.</h2><p>The county parcel says the Coles live in a townhouse, whatever ServSuite says. Our sample lead log has no account numbers, so the tool matches it by address and finds Hector Watson's open termite quote.</p></div>
           <div><h2>Run the campaign rules, in order.</h2><p>Fall termite mailer: Florida pest and lawn customers in houses. Every household a rule removes lands in the waterfall report with the rule and the evidence.</p></div>
-          <div><h2>Two letters. Nothing to clean up.</h2><p>Nineteen rows became two households, one piece each. Everything the tool fixed goes into an import file for ServSuite, so next Sunday starts cleaner.</p></div>
+          <div><h2>Two letters. Nothing to clean up.</h2><p>Nineteen rows became two households, one piece each. Both were serviced in the last six months, TJ's own test for a good termite lead. Every fix goes into an import file for ServSuite, because corrections made outside the system of record come back every Sunday.</p></div>
         </div>
       </div>
       <div class="cl-body" id="cl-body">
         <div class="sheet" id="sheet">
-          <div class="sh-bar"><span id="sh-title">Sunday export · 19 rows from 6 files</span><span class="mcount" id="mcount">Removed 0</span></div>
+          <div class="sh-bar"><span id="sh-title">Sunday export · 19 rows from 5 files</span><span class="mcount" id="mcount">Removed 0</span></div>
           <div class="sh-cols"><span class="c-src">File</span><span>First name</span><span class="c-last">Last name</span><span>Address</span><span class="c-city">City</span><span>Found</span></div>
           <div class="rows" id="rows"></div>
           <div class="stamp ok" id="cl-stamp">Mail-ready<small>2 households · 1 piece each</small></div>
@@ -484,7 +484,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="sec-h reveal">
       <p class="kicker">The test run</p>
       <h2>Then we ran all 48,539.</h2>
-      <p class="lede">We generated nine spreadsheets that look like a Sunday export, with every problem TJ and Rebecca described planted in them and an answer key on the side. Then we ran the tool and graded its work. No Massey data was used.</p>
+      <p class="lede">TJ said the lists run 30,000 to 100,000 names. We generated nine spreadsheets that look like a Sunday export, planted every problem TJ and Rebecca described, and kept an answer key. Then we ran the tool and graded it. It's rules and matching on made-up data: no Massey data, and no AI model yet.</p>
     </div>
     <div class="run-grid">
       <div class="reveal">
@@ -502,16 +502,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <div class="fout">
             <a href="samples/Termite_Mail_Ready_List.xlsx" download><i>XLSX</i><div><b>Termite_Mail_Ready_List.xlsx</b><span>6,987 households, scored A, B or C, each with the reason</span></div><em>↓</em></a>
             <a href="samples/Termite_Mail_Waterfall.xlsx" download><i>XLSX</i><div><b>Termite_Mail_Waterfall.xlsx</b><span>Every record removed, the rule and the evidence</span></div><em>↓</em></a>
-            <a href="samples/CRM_Corrections.xlsx" download><i>XLSX</i><div><b>CRM_Corrections.xlsx</b><span>Fixes for ServSuite: 8,108 household links, 35,140 property types from parcels, 1,224 missing DNC flags</span></div><em>↓</em></a>
+            <a href="samples/CRM_Corrections.xlsx" download><i>XLSX</i><div><b>CRM_Corrections.xlsx</b><span>Fixes for ServSuite: 8,108 household links, 35,140 property types from parcels, 1,224 missing DNC flags, 2,100 acquired-company records mapped</span></div><em>↓</em></a>
           </div>
         </div>
         <div class="acc">
           <div><b><span data-count="1598">1,598</span><em> / 1,603</em></b><span>do-not-contact households caught, 1 false alarm</span></div>
           <div><b><span data-count="325">325</span><em> / 326</em></b><span>deceased households caught, 0 false alarms</span></div>
-          <div><b><span data-count="99.6" data-dec="1">99.6</span><em>%</em></b><span>of household links correct</span></div>
-          <div><b>0</b><span>households merged across cities, out of 198 street addresses that repeat</span></div>
+          <div><b><span data-count="99.6" data-dec="1">99.6</span><em>%</em></b><span>of household links correct, and 98.1% of true links found</span></div>
+          <div><b>0</b><span>households merged across state lines, with 198 street addresses repeated in different cities</span></div>
         </div>
-        <p class="honest">Your real data will be messier than ours in ways we can't guess. Phase 1 measures these same numbers on one of your Sunday exports before anything gets mailed.</p>
+        <p class="honest">TJ put it best: "If you can't get DNC right, how can I trust you to get my credit card information?" That's why we measured it. Your real data will be messier than ours, so Phase 1 measures the same numbers on your data before anything gets mailed.</p>
       </div>
       <div class="wf-box reveal d1">
         <div class="wf-top">
@@ -536,7 +536,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="sec-h reveal">
       <p class="kicker">How it works</p>
       <h2>Your data in. Smart targeting out.</h2>
-      <p class="lede">Same engine as our one-pager. Massey's exports and three public datasets go in, three stages run, and you get clean lists every week plus the targeting that comes once every household is on the map.</p>
+      <p class="lede">Same engine as the one-pager. TJ asked for four things: solve it, reconcile it, apply the rules, and flag who doesn't qualify. Your four data sources and three public datasets go in, three stages run, and the weekly lists come out. Once every household sits on a parcel, better targeting comes with it.</p>
     </div>
     <div class="eng reveal" id="eng">
       <canvas id="eng-c" aria-hidden="true"></canvas>
@@ -572,7 +572,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
         <span class="n">STAGE 1</span><h3>Data Preprocessing</h3>
         <ul>
           <li><b>Reads the Sunday exports as they come.</b> Nobody on your team reformats anything first.</li>
-          <li><b>Finds do-not-contact, deceased and "no mail" wherever it's typed:</b> the checkboxes, name fields, notes and the master DNC list. Rules catch the common patterns. An AI model reads the free text the rules miss, and a person confirms anything it isn't sure about.</li>
+          <li><b>Finds do-not-contact, deceased and "no mail" wherever it's typed:</b> the four do-not-market boxes, name fields, notes and the master DNC list. In the test run, rules alone caught all 53 "no mail" requests typed into notes. With your data we add an AI model for the phrasings rules miss, and a person confirms anything uncertain. Taking someone off a do-not-contact list always takes a person's sign-off.</li>
           <li><b>Writes names and addresses one way</b>, so "Kenneth/Jennifer," "HELEN AND CHRISTOPHER" and "1071 West Whisper Wood Way" all match their other records.</li>
           <li><b>Links accounts into households</b> by address, name and phone. It tolerates typos, never links across cities, and respects the Do Not Merge flag.</li>
         </ul>
@@ -580,28 +580,23 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       <article class="reveal d1">
         <span class="n">STAGE 2</span><h3>Spatial Analysis</h3>
         <ul>
-          <li><b>Puts every address on its county parcel.</b> The parcel says house, townhouse or condo and the year it was built. In the test run, 35,140 accounts had a blank or wrong property type.</li>
-          <li><b>Keeps cities apart.</b> The same street in Houston and Dallas is two parcels, so suppressing one never suppresses the other.</li>
-          <li><b>Measures distance to ponds, canals and wetlands</b> from the National Wetlands Inventory and county water layers, for mosquito and termite targeting.</li>
+          <li><b>Puts every address on its county parcel.</b> The parcel gives single-family or condo, the year built, and in most counties townhouse. In the test run it set the property type on 35,140 accounts. The 1,615 records not on a county roll are marked unverified for a person to check.</li>
+          <li><b>Keeps cities apart.</b> TJ's example: the same house number and street in Dallas and Houston. They're two parcels, so suppressing one never suppresses the other.</li>
+          <li><b>Measures distance to ponds, canals and wetlands</b> from the National Wetlands Inventory and county water layers, for mosquito targeting.</li>
           <li><b>Finds neighbors:</b> homes on streets where Massey already has customers but that are missing the service their neighbors buy.</li>
         </ul>
       </article>
       <article class="reveal d2">
         <span class="n">STAGE 3</span><h3>Machine Learning</h3>
         <ul>
-          <li><b>Scores every household for its next best offer</b> using Rebecca's signals: recent service, other services held, referrals, response to past mail, and years with only one service.</li>
+          <li><b>Scores every household for its next best offer</b> using the signals Massey listed in the Q&amp;A: recent service, other services held, referrals, response to past mail, and years with only one service.</li>
           <li><b>Starts with simple points on day one.</b> The test run already ranks the termite list into 2,484 A, 3,799 B and 704 C households.</li>
           <li><b>Learns from your response history</b> once campaigns go out, and we report whether Tier A actually beats Tier C.</li>
           <li><b>Predicts where mosquito demand jumps next</b> from rain, forecasts and nearby water. That model is explained below.</li>
         </ul>
       </article>
     </div>
-    <div class="outs reveal">
-      <div><b>Mail-ready list</b><span>One row per household, ready for the mail house or the email platform. No nine sheets, no 19 steps.</span></div>
-      <div><b>Waterfall report</b><span>Every removed customer, the rule that removed them and the evidence, so you can show the suppression rules were applied.</span></div>
-      <div><b>ServSuite fixes</b><span>An import file your team reviews and loads. Removing someone from a do-not-contact list always takes a person's sign-off.</span></div>
     </div>
-  </div>
 </section>
 
 <section id="mosquito" class="sec dark" style="background:#050f1b">
@@ -609,20 +604,19 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="sec-h reveal">
       <p class="kicker">The mosquito model</p>
       <h2>"It rained a lot in Houston."</h2>
-      <p class="lede">That was TJ's example of a perfect mosquito lead, and the timing is the whole game. Mosquito numbers jump about a week after heavy rain. TJ said a one-day delay can cost a week in the field. The model's job is to spot the rain early so the email lands before the bites start.</p>
+      <p class="lede">That was TJ's example of a perfect mosquito lead. It only works if the email goes out before the mosquitoes do. Floodwater mosquitoes emerge one to two weeks after heavy rain, sooner in hot weather, and TJ said a day's delay on his side "could actually be a week delay" in the campaign. The model's job is to spot the rain early enough for the email to land first.</p>
     </div>
-    <div class="mq-scene reveal"><canvas id="mq-c" aria-label="Animation: heavy rain on day 0, the model flags the zip on day 2, the email lands on day 3, mosquitoes hatch around day 7, calls come in after that"></canvas></div>
+    <div class="mq-scene reveal"><canvas id="mq-c" aria-label="Animation: heavy rain on day 0, the model flags the zip on day 2, the email lands on day 3, adult mosquitoes emerge from about day 7, calls come in after that"></canvas></div>
     <div class="mq-grid">
-      <article class="reveal"><h3>What it predicts</h3><p>For every zip code, every day in season: how many mosquito sign-ups and calls to expect over the next two weeks. Then which households in those zips to email first.</p></article>
+      <article class="reveal"><h3>What it predicts</h3><p>For every zip code, every day in season: how many mosquito sign-ups and calls to expect over the next two weeks, and which households there to email first. Each morning you get a short list: which zips, which households, and why.</p></article>
       <article class="reveal d1"><h3>What it learns from</h3><ul>
-        <li>Rain over the last 7 and 14 days, compared with normal for that week (NOAA)</li>
-        <li>Rain in the 7-day forecast</li>
+        <li>Rain over the last 7 and 14 days against the 30-year normal (gridded National Weather Service rainfall)</li>
+        <li>The National Weather Service forecast for the next few days</li>
         <li>Temperature, since warm weeks speed up the cycle</li>
         <li>How close homes sit to ponds, canals and wetlands</li>
         <li>Massey's own past mosquito sign-ups and leads, by zip and week</li>
         <li>The household: services, home type, neighbors on mosquito service, past response</li></ul></article>
-      <article class="reveal d2"><h3>How we build and check it</h3><p>A gradient-boosted tree model trained on past seasons of your sales and lead history matched to weather history. It works well on tables like this, and it shows which inputs drove each prediction. We test it on a season it never saw. It only replaces the simple rule if it beats the rule.</p></article>
-      <article class="reveal d3"><h3>What you get</h3><p>A short list each morning in rainy season: the zips about to jump and the households to email, each with the reason.</p><div class="eg">77079 Houston: 6.08 in. of rain in 14 days, 3.6× normal for the week. Email the households there without mosquito service.</div></article>
+      <article class="reveal d2"><h3>How we build and check it</h3><p>A gradient-boosted tree model trained on past seasons of your sales and lead history, matched to the weather each week. It's the standard choice for data like this, and it reports which inputs drove each prediction. We test it on a season it never saw, and it only replaces the simple rule if it beats the rule.</p></article>
     </div>
     <div class="today">
       <div class="today-copy reveal">
@@ -633,7 +627,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
           <input id="rt" type="range" min="1" max="6" step="0.5" value="3">
           <p class="readout"><b id="rt-n">26</b> of <span id="rt-tot">69</span> zips get the email this week</p>
         </div>
-        <div class="rstats"><div><b>3,545</b>emails ready at 3 in.</div><div><b>10,388</b>held for the next rain</div><div><b>4,505</b>bad addresses caught, like ".cm"</div></div>
+        <div class="rstats"><div><b>3,545</b>emails ready at 3 in.</div><div><b>10,388</b>held for the next rain</div><div><b>4,505</b>unusable email addresses caught</div></div>
       </div>
       <div class="rain-map reveal d1" id="rain-map"><canvas id="rain-c" aria-hidden="true"></canvas><div id="states"></div></div>
     </div>
@@ -644,7 +638,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   <div class="wrap">
     <div class="sec-h reveal">
       <p class="kicker">Who we are</p>
-      <h2>Messy records tied to real places. That's our day job.</h2>
+      <h2>Tying messy records to real places is our day job.</h2>
       <p class="lede">Drummond Carpenter is a service-disabled veteran-owned firm in Maitland, just up I-4 from Massey. Our data team works alongside the GIS analysts and civil engineers who use county parcels, rainfall and wetlands data every day. That's why our approach starts at the parcel.</p>
     </div>
     <div class="story">
@@ -657,20 +651,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
       </div>
       <div class="reveal d1">
         <ul class="creds">
-          <li><b>We build what local governments decide with.</b><span>Dashboards and maps that counties use to set priorities, run operations and explain decisions to the public.</span></li>
+          <li><b>Counties make decisions on our dashboards and maps.</b><span>Dashboards and maps that counties use to set priorities, run operations and explain decisions to the public.</span></li>
           <li><b>We work with sensitive data.</b><span>For federal and private clients, cybersecurity practices are built into our projects, including work with controlled information.</span></li>
           <li><b>We check our own work.</b><span>Quality control and independent technical review, built to hold up under regulatory scrutiny.</span></li>
         </ul>
-        <div class="facts">
-          <dl>
-            <div><dt>Company size</dt><dd><b>40+ employees</b>, 10+ in data science and GIS</dd></div>
-            <div id="rev-row" hidden><dt>Annual revenue</dt><dd class="rev"></dd></div>
-            <div><dt>Ownership</dt><dd>Service-Disabled Veteran-Owned Small Business</dd></div>
-            <div><dt>Larger clients</dt><dd>Federal: <b>DOE, DOD, NASA, VA, EPA</b>. State and local: <b>40+ agencies</b>, including Orange County and the City of Orlando</dd></div>
-            <div><dt>Security</dt><dd>Cybersecurity practices on federal and private projects that handle sensitive or controlled information</dd></div>
-            <div><dt>Offices</dt><dd>Maitland, FL (HQ), plus Michigan, Pennsylvania and Tennessee</dd></div>
-          </dl>
-        </div>
         <div class="recog">
           <span><b>2026</b> Florida Trend Best Companies to Work For</span>
           <span><b>2025</b> SBA Florida SDVOSB of the Year</span>
@@ -694,16 +678,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
     <div class="phases">
       <article class="phase reveal"><span class="wk">WEEKS 1–3</span><h3>Build the foundation</h3><p>Sign your NDA, run the tool on one real Sunday export, and turn the 19 mail-house steps into written rules. <b>You get the waterfall and fixes on your own data, and accuracy measured against it.</b></p></article>
       <article class="phase reveal d1"><span class="wk">WEEKS 4–9</span><h3>Design the solution</h3><p>Connect to the weekly exports, set up a review screen for uncertain matches, and agree the ServSuite write-back with IT and BI. <b>You get the tool running every Sunday and lead scoring version 1.</b></p></article>
-      <article class="phase reveal d2"><span class="wk">WEEKS 10–16</span><h3>Prove it in practice</h3><p>Run one direct-mail and one email campaign through the tool next to today's process. <b>You get side-by-side results: hours saved, zero DNC or deceased mailed, zero duplicates, response by tier.</b></p></article>
+      <article class="phase reveal d2"><span class="wk">WEEKS 10–16</span><h3>Prove it in practice</h3><p>Run one direct-mail and one email campaign through the tool next to today's process. <b>You get side-by-side results: hours saved, DNC and deceased records caught versus today's process, duplicates found, and response by tier.</b></p></article>
     </div>
     <p class="gonogo reveal">Each phase ends with a go or no-go decision.</p>
     <div class="ct">
       <div class="reveal">
         <p class="kicker">Next step</p>
         <h2>Give us an hour and one Sunday export.</h2>
+        <p class="lede" style="margin-bottom:10px">You said on stage that Massey had never gotten to the point where it could start testing something. This is that test.</p>
         <ol>
           <li>An hour with Rebecca, TJ, the marketing managers and someone from IT or BI. We run this live and walk your 19 steps together.</li>
-          <li>You send one Sunday export under NDA. It stays in your environment.</li>
+          <li>You send one Sunday export under NDA. It stays in your environment, and nothing is used to train outside AI models.</li>
           <li>Within two weeks you see the waterfall and the fixes on your own data.</li>
         </ol>
       </div>
@@ -747,7 +732,7 @@ function prog(el){const r=el.getBoundingClientRect(),t=r.height-innerHeight;retu
 function watch(el,cb,th=0){const io=new IntersectionObserver(es=>es.forEach(e=>cb(e.isIntersecting)),{threshold:th});io.observe(el);return io}
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 
-if(REVENUE){$$('.rev').forEach(e=>e.textContent=REVENUE);$('#rev-gl').hidden=false;$('#rev-row').hidden=false}
+if(REVENUE){$$('.rev').forEach(e=>e.textContent=REVENUE);$('#rev-gl').hidden=false}
 
 /* gradient noise for the flow field */
 const PERM=new Uint8Array(512);{const p=shuffle([...Array(256).keys()]);for(let i=0;i<512;i++)PERM[i]=p[i&255]}
@@ -876,7 +861,7 @@ $$('.reveal').forEach(el=>rio.observe(el));
   // Each row as exported, then its standardized value. hh = household; p = the row that stands for the household.
   const R=[
     {s:'Pest',f:'Brian - DNC',l:'Edwards',a:'1504 Bay Rd',c:'Kissimmee FL',f2:'Brian',a2:'1504 BAY RD',hh:'A',p:1,bad:'f',flag:['r','DNC in first name'],boom:1},
-    {s:'Termite',f:'Frank (Deceased)',l:'Campbell',a:'529 N Eagle Ridge Dr',c:'Fort Myers FL',f2:'Frank',a2:'529 N EAGLE RIDGE DR',hh:'B',p:1,bad:'f',flag:['r','Deceased in first name'],boom:1},
+    {s:'Pest',f:'Anthony (Deceased)',l:'Gibson',a:'6900 S Harbor Lane',c:'Apopka FL',f2:'Anthony',a2:'6900 S HARBOR LN',hh:'B',p:1,bad:'f',flag:['r','Deceased in first name'],boom:1},
     {s:'Pest',f:'MARIA',l:'BRYANT',a:'1774 PRIMROSE LN',c:'Orlando FL',f2:'Maria',l2:'Bryant',hh:'C',p:1,warn:'fl',flag:['a','All caps']},
     {s:'Lawn',f:'Maria',l:'Bryant',a:'1774 Primrose Ln',c:'Orlando FL',a2:'1774 PRIMROSE LN',hh:'C'},
     {s:'Irrigation',f:'Maria',l:'Bryant',a:'1774 Primrose Ln',c:'Orlando FL',a2:'1774 PRIMROSE LN',hh:'C'},
@@ -897,18 +882,18 @@ $$('.reveal').forEach(el=>rio.observe(el));
   ];
   const HH={
     A:{st3:[['r','DNC in first name']],out:[5,'Brian Edwards','Do not contact: "DNC" typed in the first name']},
-    B:{st3:[['r','Deceased in first name']],out:[4,'Frank Campbell','Deceased, in the name field. Already a termite customer.']},
-    C:{n:3,st3:[['g','3 accounts, 1 home']],st4:[['g','Parcel: single family, 1992']],fin:[['l','Tier A'],['g','3 referrals, new customer']]},
+    B:{st3:[['r','Deceased in first name']],out:[4,'Anthony Gibson','Deceased, typed in the first name field']},
+    C:{n:3,st3:[['g','3 accounts, 1 home']],st4:[['g','Parcel: single family, 1992']],fin:[['l','Tier A'],['g','Serviced in last 6 months · 3 referrals']]},
     D:{n:2,st3:[['g','2 accounts, 1 home']],st4:[['r','Parcel: townhouse, not a house']],out:[8,'Kenneth & Jennifer Cole','Townhouse per county parcel FL-32828-0017704']},
     E:{st3:[],st4:[['b','Termite offer sent Aug 12']],out:[9,'Helen & Christopher Marshall','Got a termite offer on Aug 12']},
     F:{n:2,st3:[['g','2 accounts, 1 home']],st4:[['b','Lead L-55417: termite quote open']],out:[7,'Hector & Andrea Watson','Sales is quoting termite (lead L-55417)']},
     G:{n:4,st3:[['g','4 accounts, 1 home, typo matched']],st4:[['b','Has termite: acct 1040235']],out:[6,'Donna Nelson','Already has termite on acct 1040235']},
-    H:{st3:[['b','Same street, other city: kept apart']],out:[2,'Theresa Gonzales','Cancelled account']},
-    I:{st3:[['b','Same street, other city: kept apart']],out:[1,'William Fernandez','Outside Florida (Atlanta, GA)']},
+    H:{st3:[['b','Same street, other city: kept apart']],st4:[['a','Status: cancelled'],['b','Kept apart from Atlanta']],out:[2,'Theresa Gonzales','Cancelled account']},
+    I:{st3:[['b','Same street, other city: kept apart']],st4:[['a','Georgia'],['b','Kept apart from Sarasota']],out:[1,'William Fernandez','Outside Florida (Atlanta, GA)']},
     K:{st3:[['r','Notes: "no mail"']],out:[5,'Kelly King','Asked for no mail, in the acquired company\'s notes']},
-    J:{n:2,st3:[['g','Same account, 1 piece']],st4:[['g','Parcel: single family, 2000']],fin:[['l','Tier A'],['g','Responded to a recent offer']]},
+    J:{n:2,st3:[['g','Same account, 1 piece']],st4:[['g','Parcel: single family, 2000']],fin:[['l','Tier A'],['g','Serviced in last 6 months · answered a recent offer']]},
   };
-  const TITLES=['Sunday export · 19 rows from 6 files','Sunday export · 19 rows from 6 files','Standardized · 19 rows','11 households','11 households','Fall termite mailer · rules applied','Mail-ready list · 2 households'];
+  const TITLES=['Sunday export · 19 rows from 5 files','Sunday export · 19 rows from 5 files','Standardized · 19 rows','11 households','11 households','Fall termite mailer · rules applied','Mail-ready list · 2 households'];
   const sec=$('#clean'),rowsEl=$('#rows'),sheet=$('#sheet'),body=$('#cl-body'),fxc=$('#cl-fx'),ledger=$('#ledger'),caps=$$('#cl-cap>div'),progEls=$$('#cl-prog li'),stamp=$('#cl-stamp');
   const sp=new Sparks();let fx,FW,FH,running=false,cur=-1,gen=0,rh=28;
   const els=R.map(()=>{const d=document.createElement('div');d.className='row';
@@ -1090,7 +1075,7 @@ $$('.reveal').forEach(el=>rio.observe(el));
 (function(){
   const c=$('#mq-c');let ctx,W,H,vis=false,raf=0,t0=0,rain=[],mos=[],env=[],rings=[],houses=[],pond,ground;
   const LOOP=15000,DAYS=14;
-  const EV=[[0,'Heavy rain'],[2,'Model flags the zip'],[3,'Email lands'],[7,'Mosquitoes hatch'],[9,'Calls come in']];
+  const EV=[[0,'Heavy rain'],[2,'Model flags the zip'],[3,'Email lands'],[7,'Adults emerge'],[9,'Calls come in']];
   function measure(){[ctx,W,H]=fit(c);ground=H*.64;const mob=W<600;
     pond={x:W*.2,y:ground+8,rx:W*(mob?.15:.12),ry:12};
     houses=[];const n=mob?4:6,x0=W*(mob?.46:.42),x1=W*.94;for(let i=0;i<n;i++)houses.push({x:x0+(x1-x0)*i/(n-1),w:mob?28:40,lit:0});rain=[];mos=[];env=[];rings=[]}
@@ -1125,7 +1110,7 @@ $$('.reveal').forEach(el=>rio.observe(el));
     for(const m of mos){if(motion)fly(m,mb,.28,1.1);drawMosq(ctx,m.x,m.y,m.a,mob?.85:1.05,m.ph,'#eef7cf',.95)}
     if(motion&&d>9&&d<DAYS&&Math.random()<.06){const h=houses[Math.floor(Math.random()*houses.length)];rings.push({x:h.x,y:ground-h.w*1.45,r:3,l:1})}
     for(let i=rings.length-1;i>=0;i--){const r=rings[i];r.r+=.9;r.l-=.025;if(r.l<=0){rings.splice(i,1);continue}ctx.strokeStyle=`rgba(215,247,117,${r.l})`;ctx.lineWidth=1.6;ctx.beginPath();ctx.arc(r.x,r.y,r.r,0,TAU);ctx.stroke()}
-    if(d>=2){const tx=mob?'77079 Houston · 6.08 in. · 3.6× normal':'77079 Houston · 6.08 in. of rain in 14 days · 3.6× normal';ctx.font=`600 ${mob?10:12}px "IBM Plex Mono", monospace`;const tw=ctx.measureText(tx).width;
+    if(d>=2){const tx=mob?'77079 Houston · 6.08 in. in 14 days':'77079 Houston · 6.08 in. of rain in 14 days (sample weather)';ctx.font=`600 ${mob?10:12}px "IBM Plex Mono", monospace`;const tw=ctx.measureText(tx).width;
       ctx.fillStyle='rgba(6,26,43,.85)';ctx.fillRect(14,14,tw+20,28);ctx.strokeStyle='#d7f775';ctx.lineWidth=1;ctx.strokeRect(14.5,14.5,tw+19,27);ctx.fillStyle='#d7f775';ctx.fillText(tx,24,33)}
     const ty=H-22,tx0=24,tx1=W-44,X=v=>tx0+(tx1-tx0)*v/DAYS;
     ctx.strokeStyle='rgba(255,255,255,.18)';ctx.lineWidth=2;ctx.beginPath();ctx.moveTo(tx0,ty);ctx.lineTo(tx1,ty);ctx.stroke();
